@@ -5,8 +5,6 @@ title: '1. Setup Your Pi'
 layout: nil
 ---
 
-{:.intro}
-### Intro: 
 Let's begin by setting up the Pi. The Raspberry Pi 3 board includes - 
 
 - 4 USB ports
@@ -19,32 +17,26 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 {:.steps}
 ### Assembling Your Pi
 
-1. Insert your micro SD card into the micro SD card slot on your Pi.
-2. Plug in the USB microphone and headphones.
-3. Connect the keyboard and mouse to the USB ports.
-4. Connect your monitor using the HDMI port.
-5. Plugin in the earphones into the 3.5mm audio jack.
-
-<<COMPLETE_IMAGE>>
+1. Insert Pi into the included case.
+2. Insert your micro SD card into the micro SD card slot on your Pi.
+3. Plug in the USB microphone and headphones.
+4. Connect the keyboard and mouse to the USB ports.
+5. Connect your monitor using the HDMI port.
 
 {:.steps}
 ### Booting Your Pi
 
 1. Connect to the power supply.
-2. If you're prompted to login use these credentials:
+2. If you're prompted to login - use these credentials:
    * **Username:** pi  
    * **Password:** raspberry
 
-
 {:.steps}
-### Connecting to Wifi
+### Connecting to WiFi Network
 
-Your Pi should automatically connect to the conference wifi. If for any reason your Pi doesn't connect, select the following SSID from the wifi dropdown: **Condensate**.
+Your Pi should automatically connect to the conference WiFi - **Condensate**.. If for any reason your Pi doesn't connect, select **Condensate** from the wifi dropdown on the menu bar.
 
-<<VNC PW = raspbian>>
 
 {:.verify}
-### Verify
-Make sure you're connected to the "Condensated" Network. 
-
-![](assets/avs-flags-1.png)
+### Checkpoint 1
+1. Make sure you're connected to the **Condensate** network and are able to navigate to [https://developer.amazon.com](https://developer.amazon.com).
