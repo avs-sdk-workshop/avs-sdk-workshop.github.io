@@ -5,7 +5,7 @@ title: 'Extra Credit'
 layout: nil
 ---
 
-### Go Headless
+### Connect remotely using VNC
 
 Now that you've got your AVS prototype running, you may want to get rid of the monitor, keyboard and mouse. You can do that by using SSH and VNC. Follow the instructions here to setup SSH and VNC.
 
