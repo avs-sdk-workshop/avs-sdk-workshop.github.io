@@ -1,5 +1,5 @@
 ---
-title: '9. Launch Wake Word'
+title: '9. Launch the Wake Word Engine'
 
 
 layout: nil

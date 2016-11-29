@@ -1,5 +1,5 @@
 ---
-title: '7. Launch Companion Service'
+title: '7. Launch the Companion Service'
 
 
 layout: nil
