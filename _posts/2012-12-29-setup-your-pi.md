@@ -11,7 +11,6 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 - HDMI port for video output (you'll be using this to connect to your HDMI monitor)
 - 3.5mm audio jack for sound output (you'll be using to connect your earphones)
 - Micro SD card slot
-- 802.11n Wireless LAN
 - Ethernet port
 
 {:.steps}
@@ -22,6 +21,7 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 3. Plug in the USB microphone and headphones.
 4. Connect the keyboard and mouse to the USB ports.
 5. Connect your monitor using the HDMI port.
+6. Connect the Ethernet Cable
 
 {:.steps}
 ### Booting Your Pi
@@ -31,12 +31,6 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
    * **Username:** pi  
    * **Password:** raspberry
 
-{:.steps}
-### Connecting to WiFi Network
-
-Your Pi should automatically connect to the conference WiFi - **Condensate**.. If for any reason your Pi doesn't connect, select **Condensate** from the wifi dropdown on the menu bar.
-
-
 {:.verify}
 ### Checkpoint 1
-1. Make sure you're connected to the **Condensate** network and are able to navigate to [https://developer.amazon.com](https://developer.amazon.com).
+1. Make sure you're connected to the internet and are able to navigate to [https://developer.amazon.com](https://developer.amazon.com).
