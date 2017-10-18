@@ -28,7 +28,7 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 
 1. Connect to the power supply.
 2. If you're prompted to login - use these credentials:
-   * **Username:** pi  
+   * **Username:** pi
    * **Password:** raspberry
 
 {:.verify}

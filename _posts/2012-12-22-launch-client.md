@@ -11,7 +11,7 @@ Open a new terminal window and type the following commands to run the sample app
 
 	cd ~/Desktop/alexa-avs-sample-app/samples/javaclient && mvn exec:exec
 
-![](assets/avs-pi-3.png)			 
+![](assets/avs-pi-3.png)
 
 Let's walk through the next few steps relevant to Window 2.
 

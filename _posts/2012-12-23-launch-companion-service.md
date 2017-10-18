@@ -7,16 +7,12 @@ layout: nil
 
 {:.steps}
 ### Terminal Window 1
-Open a new terminal window and type the following commands to bring up the web service which is used to authorize your sample app with AVS:
-
-	cd ~/Desktop/alexa-avs-sample-app/samples/companionService && npm start
-
-The server is now running on port 3000 and you are ready to start the client.		
-
-See [API Overview > Authorization](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/content/avs-api-overview#authorization) to learn more about authorization.
-
+1. In the terminal window, from the avs-sdk directory, run `./startauth.sh`
+2. In the browser, go to http://localhost:3000
+3. Log into AMazon to generate the refresh token.
+4. Your browser page should show that it succeeded, and the auth server will automatically terminate.
 
 {:.verify}
 ### Checkpoint 7
 
-1. Ensure that your web service is listening on port 3000.
+1. From the terminal window in the avs-sdk directory, type `cat ./Integration/AlexaClientSDKConfig.json` and make sure the refresh token value is set.
