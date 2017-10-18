@@ -12,7 +12,7 @@ You are now ready to run the install script. This will install all dependencies,
 
 To run the script, open **terminal**. There should be two scripts in your home directory, config.sh that you just created, and setup.sh that was already there. Run the following:
 
-```
+``` bash
 mkdir avs-sdk
 cp *.sh avs-sdk
 cd avs-sdk

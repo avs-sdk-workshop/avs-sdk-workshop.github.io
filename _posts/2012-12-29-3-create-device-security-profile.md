@@ -49,7 +49,6 @@ After you've registered for an Amazon developer account, you'll need to create a
 	 - In the **Allowed Return URLs** enter **https://localhost:3000/authresponse** in the text field and then click the **ADD** button.
 	 - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements*
 	 - Click **Finish**. 
-     ![](assets/avs-web-settings-filled.png)
 
 {:.verify}
 ### Checkpoint 3
