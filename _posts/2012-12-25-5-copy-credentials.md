@@ -10,21 +10,21 @@ layout: nil
 3. Select **Security Profile** from the left nav and copy your **Client ID** and **Client Secret**.
 4. Place the following into a text file on your pi with your values entered for each field, and save as config.sh in your home folder (/home/pi). The device serial number can be any alpha-numeric value.:
 
-``` bash
+`
 CLIENT_SECRET=""
 DEVICE_SERIAL_NUMBER=""
 CLIENT_ID=""
 PRODUCT_ID=""
-```
+`
 
 example:
 
-``` bash
+`
 CLIENT_SECRET="1234567890123456789012345678901234567890123456789012345678901234"
 DEVICE_SERIAL_NUMBER="DEV12345"
 CLIENT_ID="amzn1.application-oa2-client.12345678901234567890123456789012"
 PRODUCT_ID="MY_GREAT_SPEAKER"
-```
+`
 
 {:.verify}
 ### Checkpoint 5

@@ -16,7 +16,7 @@ After you've registered for an Amazon developer account, you'll need to create a
 3. If this is your first time using AVS, then you will get a welcome screen. Click on the **GET STARTED** button. If you have already used AVS before, then instead click the **Create Product** button.
 
 {:.tab}
-#### Device Type Info (Left Nav)
+#### Device Type Info
 
 1. **Product Name**: the display name in the developer portal, as well as the name that will be provided to your users when they register the product with Amazon.
 2. **Product ID**: provide a simple identifier for your product. **No spaces.**
@@ -48,7 +48,7 @@ After you've registered for an Amazon developer account, you'll need to create a
 	 - Make sure the security profile you just created is selected in the drop-down menu. 
 	 - In the **Allowed Return URLs** enter **https://localhost:3000/authresponse** in the text field and then click the **ADD** button.
 	 - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements*
-	 - Click **Finish**. 
+	 - Click **Finish**.
 
 {:.verify}
 ### Checkpoint 3
