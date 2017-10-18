@@ -12,18 +12,18 @@ You are now ready to run the install script. This will install all dependencies,
 
 To run the script, open **terminal**. There should be two scripts in your home directory, config.sh that you just created, and setup.sh that was already there. Run the following:
 
-``` bash
+`
 mkdir avs-sdk
 cp *.sh avs-sdk
 cd avs-sdk
 ./setup.sh config.sh
-```
+`
 
 *You'll be prompted accept the Sensory agreement during installation. Otherwise all steps are covered in the script execution for setup.*
 
 The following shows the contents of the setup script. It's a relatively simple script designed to run on a 
 
-``` bash
+`
 #!/bin/bash
 
 if [ $# -eq 0 ]
@@ -234,10 +234,10 @@ EOF
 
 chmod +x "$START_SCRIPT"
 chmod +x "$START_AUTH_SCRIPT"
-```
+`
 
 {:.verify}
 ### Checkpoint 6
 
 1. Build completed without error output.
-2. Verify that there are two script files created, `startauth.sh` and `startsample.sh`
+2. Verify that there are two script files created, **startauth.sh** and **startsample.sh**
