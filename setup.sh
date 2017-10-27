@@ -17,21 +17,25 @@ set -e
 if [[ ! "$CLIENT_ID" =~ amzn1\.application-oa2-client\.[0-9a-z]{32} ]]
 then
    echo 'client ID is invalid!'
+   exit 1
 fi
 
 if [[ ! "$CLIENT_SECRET" =~ [0-9a-f]{64} ]]
 then 
    echo 'client secret is invalid!'
+   exit 1
 fi
 
 if [[ ! "$PRODUCT_ID" =~ [0-9a-zA-Z_]+ ]]
 then 
    echo 'product ID is invalid!'
+   exit 1
 fi
 
 if [[ ! "$DEVICE_SERIAL_NUMBER" =~ [0-9a-zA-Z_]+ ]]
 then 
    echo 'product ID is invalid!'
+   exit 1
 fi
 
 LOCALE=${LOCALE:-'en-US'}
@@ -68,81 +72,87 @@ SOUND_CONFIG="$HOME/.asoundrc"
 START_SCRIPT="$INSTALL_BASE/startsample.sh"
 START_AUTH_SCRIPT="$INSTALL_BASE/startauth.sh"
 
-# Make sure required packages are installed
-echo "==============> INSTALLING REQUIRED TOOLS AND PACKAGE ============"
-echo
+if [ ! -d "$BUILD_PATH" ]
+then
 
-sudo apt-get update
-sudo apt-get -y install git gcc cmake build-essential libsqlite3-dev libcurl4-openssl-dev libfaad-dev libsoup2.4-dev libgcrypt20-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-good libasound2-dev sox gedit vim
+    # Make sure required packages are installed
+    echo "==============> INSTALLING REQUIRED TOOLS AND PACKAGE ============"
+    echo
 
-# create / paths
-echo
-echo "==============> CREATING PATHS AND GETTING SOUND FILES ============"
-echo
+    sudo apt-get update
+    sudo apt-get -y install git gcc cmake build-essential libsqlite3-dev libcurl4-openssl-dev libfaad-dev libsoup2.4-dev libgcrypt20-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-good libasound2-dev sox gedit vim
 
-mkdir -p $SOURCE_PATH
-mkdir -p $THIRD_PARTY_PATH
-mkdir -p $BUILD_PATH
-mkdir -p $SOUNDS_PATH
-mkdir -p $DB_PATH
+    # create / paths
+    echo
+    echo "==============> CREATING PATHS AND GETTING SOUND FILES ============"
+    echo
 
-#get sounds file
-wget -c $TIMER_SOUND_URL -O $TIMER_FILE
-wget -c $TIMER_SHORT_SOUND_URL -O $TIMER_SHORT_FILE
-wget -c $ALARM_SOUND__SHORT_URL -O $ALARM_SHORT_FILE
-wget -c $ALARM_SOUND_URL -O $ALARM_FILE
+    mkdir -p $SOURCE_PATH
+    mkdir -p $THIRD_PARTY_PATH
+    mkdir -p $BUILD_PATH
+    mkdir -p $SOUNDS_PATH
+    mkdir -p $DB_PATH
 
-# build port audio
-echo
-echo "==============> BUILDING PORT AUDIO =============="
-echo
+    #get sounds file
+    wget -c $TIMER_SOUND_URL -O $TIMER_FILE
+    wget -c $TIMER_SHORT_SOUND_URL -O $TIMER_SHORT_FILE
+    wget -c $ALARM_SOUND__SHORT_URL -O $ALARM_SHORT_FILE
+    wget -c $ALARM_SOUND_URL -O $ALARM_FILE
 
-cd $THIRD_PARTY_PATH
-wget -c $PORT_AUDIO_DOWNLOAD_URL
-tar zxf $PORT_AUDIO_VERSION
+    # build port audio
+    echo
+    echo "==============> BUILDING PORT AUDIO =============="
+    echo
 
-cd portaudio
-./configure --without-jack
-make
+    cd $THIRD_PARTY_PATH
+    wget -c $PORT_AUDIO_DOWNLOAD_URL
+    tar zxf $PORT_AUDIO_VERSION
 
-#get sdk 
-echo
-echo "==============> CLONING SDK =============="
-echo
+    cd portaudio
+    ./configure --without-jack
+    make
+
+    #get sdk 
+    echo
+    echo "==============> CLONING SDK =============="
+    echo
 
 
-cd $SOURCE_PATH
-git clone git://github.com/alexa/avs-device-sdk.git
+    cd $SOURCE_PATH
+    git clone git://github.com/alexa/avs-device-sdk.git
 
-#get sensory and build
-echo
-echo "==============> CLONING AND BUILDING SENSORY =============="
-echo
+    #get sensory and build
+    echo
+    echo "==============> CLONING AND BUILDING SENSORY =============="
+    echo
 
-cd $THIRD_PARTY_PATH
-git clone git://github.com/Sensory/alexa-rpi.git
-bash ./alexa-rpi/bin/license.sh
+    cd $THIRD_PARTY_PATH
+    git clone git://github.com/Sensory/alexa-rpi.git
+    bash ./alexa-rpi/bin/license.sh
 
-# make the SDK
-echo
-echo "==============> BUILDING SDK =============="
-echo
+    # make the SDK
+    echo
+    echo "==============> BUILDING SDK =============="
+    echo
+
+    cd $BUILD_PATH
+    cmake "$SOURCE_PATH/avs-device-sdk" \
+    -DSENSORY_KEY_WORD_DETECTOR=ON \
+    -DSENSORY_KEY_WORD_DETECTOR_LIB_PATH="$THIRD_PARTY_PATH/alexa-rpi/lib/libsnsr.a" \
+    -DSENSORY_KEY_WORD_DETECTOR_INCLUDE_DIR="$THIRD_PARTY_PATH/alexa-rpi/include" \
+    -DGSTREAMER_MEDIA_PLAYER=ON -DPORTAUDIO=ON \
+    -DPORTAUDIO_LIB_PATH="$THIRD_PARTY_PATH/portaudio/lib/.libs/libportaudio.a" \
+    -DPORTAUDIO_INCLUDE_DIR="$THIRD_PARTY_PATH/portaudio/include"
+
+
+fi
 
 cd $BUILD_PATH
-cmake "$SOURCE_PATH/avs-device-sdk" \
--DSENSORY_KEY_WORD_DETECTOR=ON \
--DSENSORY_KEY_WORD_DETECTOR_LIB_PATH="$THIRD_PARTY_PATH/alexa-rpi/lib/libsnsr.a" \
--DSENSORY_KEY_WORD_DETECTOR_INCLUDE_DIR="$THIRD_PARTY_PATH/alexa-rpi/include" \
--DGSTREAMER_MEDIA_PLAYER=ON -DPORTAUDIO=ON \
--DPORTAUDIO_LIB_PATH="$THIRD_PARTY_PATH/portaudio/lib/.libs/libportaudio.a" \
--DPORTAUDIO_INCLUDE_DIR="$THIRD_PARTY_PATH/portaudio/include"
-
 make SampleApp -j2
 
 echo
 echo "==============> SAVING CONFIGURATION FILE =============="
 echo
-
 
 cat << EOF > "$CONFIG_FILE"
 {
@@ -178,7 +188,7 @@ echo
 cat $CONFIG_FILE
 
 echo
-echo "==============>  CONFIGURATING AUDIO =============="
+echo "==============> SAVING AUDIL CONFIGURATION FILE =============="
 echo
 
 cat << EOF > "$SOUND_CONFIG"
@@ -208,3 +218,6 @@ EOF
 
 chmod +x "$START_SCRIPT"
 chmod +x "$START_AUTH_SCRIPT"
+
+echo " **** Completed Configuration/Build ***"
+
