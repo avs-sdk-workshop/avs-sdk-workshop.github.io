@@ -44,9 +44,9 @@ After you've registered for an Amazon developer account, you'll need to create a
 
 	 Client ID and Client Secret will be generated for you.
 
-3. Select the **Web Tab** from the Web - Android/Kindle - iOS options under **Security Profile ID** in the **Security Profile** section.
+3. Select **Web** from the Web - Android/Kindle - iOS options under **Security Profile ID** in the **Security Profile** section.
 	 - In the **Allowed Return URLs** enter **https://localhost:3000/authresponse** in the text field and then click the **ADD** button.  This will allow AVS to deliver a *refresh token* to your device, enabling it to connect to the AVS in the cloud.
-   - In the **Allowed Origins** enter **https://localhost:3000** in the text field and then click the **ADD** button.  This will allow your client to request the *refresh token* from the cloud.
+   - In the **Allowed Origins** enter **https://localhost:3000** in the text field and then click the **ADD** button.  This will allow your client to request the refresh token from the cloud.
    - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements*
 	 - Click **Finish**.
 

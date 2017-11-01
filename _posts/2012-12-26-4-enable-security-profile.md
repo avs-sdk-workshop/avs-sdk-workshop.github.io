@@ -15,8 +15,8 @@ layout: nil
 5. Click Save.
 
 	 ![](assets/avs-privacy-url.png)
-	 
+
 {:.verify}
 ### Checkpoint 4
 
-1. Ensure that you security profile appears under **Login with Amazon Configurations**.
+1. Ensure that your security profile appears under **Login with Amazon Configurations**.

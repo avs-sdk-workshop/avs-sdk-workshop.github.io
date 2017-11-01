@@ -4,7 +4,8 @@ title: '1. Setup Your Pi'
 
 layout: nil
 ---
-**Note:  you can skip this step if your Pi is already up and running**
+**Note:  you can skip this step if your Pi is already up and running.**
+
 Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 
 - 4 USB ports
