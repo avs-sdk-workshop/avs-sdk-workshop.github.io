@@ -10,18 +10,17 @@ layout: nil
 
 You are now ready to run the install script. This will install all dependencies, including the  wake word engine from Sensory.
 
-To run the script, open **terminal**. There should be two scripts in your home directory, config.sh that you just created, and setup.sh that was already there. Run the following:
+To run the script, open a **terminal** by clicking on the console window in the upper left corner of your screen (the toolbar). There should be two scripts in your `home/pi/avs-sdk` directory, **config.sh** that you just populated, and **setup.sh** which will use your config file to run the install script. In your terminal window, run the following:
 
+
+`cd home/pi/avs-sdk
+bash setup.sh config.sh
 `
-mkdir avs-sdk
-cp *.sh avs-sdk
-cd avs-sdk
-./setup.sh config.sh
-`
+Note if you have made an error in filling out the **config.sh** file with your account-specific information, the script will error out and inform you which field needs to be fixed.  In this event, return to your **security profile** on your Developer page and double-check your copy and paste into `config.sh` was correct.
 
-*You'll be prompted accept the Sensory agreement during installation. Otherwise all steps are covered in the script execution for setup.*
+Once the script is running, you'll be prompted to accept the Sensory agreement during installation.  Hit the return key to scroll through the terms and conditions until prompted for a yes/no.  Type "y" and hit return to continue. Otherwise all steps are covered in the script execution for setup.
 
-The following shows the contents of the setup script. It's a relatively simple script designed to run on a clean install of *stretch*.
+The following shows the contents of the setup script. It's a relatively simple script designed to run on a clean install of the Raspbian *stretch* OS.
 
 ```
 #!/bin/bash
@@ -46,17 +45,17 @@ then
 fi
 
 if [[ ! "$CLIENT_SECRET" =~ [0-9a-f]{64} ]]
-then 
+then
    echo 'client secret is invalid!'
 fi
 
 if [[ ! "$PRODUCT_ID" =~ [0-9a-zA-Z_]+ ]]
-then 
+then
    echo 'product ID is invalid!'
 fi
 
 if [[ ! "$DEVICE_SERIAL_NUMBER" =~ [0-9a-zA-Z_]+ ]]
-then 
+then
    echo 'product ID is invalid!'
 fi
 
@@ -131,7 +130,7 @@ cd portaudio
 ./configure --without-jack
 make
 
-#get sdk 
+#get sdk
 echo
 echo "==============> CLONING SDK =============="
 echo

@@ -4,7 +4,7 @@ title: '1. Setup Your Pi'
 
 layout: nil
 ---
-
+**Note:  you can skip this step if your Pi is already up and running**
 Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 
 - 4 USB ports
@@ -26,9 +26,7 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 ### Booting Your Pi
 
 1. Plug in the power supply to the micro USB connector on the Pi.
-2. If you're prompted to login - use these credentials:
-   * **Username:** pi
-   * **Password:** raspberry
+2. Open a web browser by clicking on the globe icon in the top left toolbar.
 
 {:.verify}
 ### Checkpoint 1

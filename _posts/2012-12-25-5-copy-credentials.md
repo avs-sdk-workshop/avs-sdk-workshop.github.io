@@ -6,8 +6,8 @@ layout: nil
 ---
 
 1. From the file explorer on your Pi desktop, navigate to /home/pi/avs-sdk.  Right-click on **config.sh** and select "Text Editor" to open your configuration file.  It should contain the following fields:
-`
-CLIENT_SECRET=""
+
+`CLIENT_SECRET=""
 DEVICE_SERIAL_NUMBER=""
 CLIENT_ID=""
 PRODUCT_ID=""
@@ -18,9 +18,9 @@ PRODUCT_ID=""
 4. Place the **ClientID** and **ClientSecret** into the `CLIENT_ID` and `CLIENT_SECRET` fields.  The device serial number can be any alpha-numeric value (here it's 123456):
 
 example:
-`
-CLIENT_SECRET="1234567890123456789012345678901234567890123456789012345678901234"
-DEVICE_SERIAL_NUMBER="DEV12345"
+
+`CLIENT_SECRET="1234567890123456789012345678901234567890123456789012345678901234"
+DEVICE_SERIAL_NUMBER="DEV12345" 
 CLIENT_ID="amzn1.application-oa2-client.12345678901234567890123456789012"
 PRODUCT_ID="MY_GREAT_SPEAKER"
 `
