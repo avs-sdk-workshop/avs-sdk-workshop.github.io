@@ -5,7 +5,7 @@ title: '1. Setup Your Pi'
 layout: nil
 ---
 
-Let's begin by setting up the Pi. The Raspberry Pi 3 board includes - 
+Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 
 - 4 USB ports
 - HDMI port for video output (you'll be using this to connect to your HDMI monitor)
@@ -21,7 +21,7 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 3. Plug in the USB microphone and headphones.
 4. Connect the keyboard and mouse to the USB ports.
 5. Connect your monitor using the HDMI port.
-6. Connect the Ethernet Cable
+6. Connect the Ethernet Cable - or don't!
 
 {:.steps}
 ### Booting Your Pi
