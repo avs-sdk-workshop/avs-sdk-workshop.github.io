@@ -44,15 +44,16 @@ After you've registered for an Amazon developer account, you'll need to create a
 
 	 Client ID and Client Secret will be generated for you.
 
-3. On the **Web Settings Tab**.
-	 - Make sure the security profile you just created is selected in the drop-down menu. 
+3. On the **Web Tab**.
 	 - In the **Allowed Return URLs** enter **https://localhost:3000/authresponse** in the text field and then click the **ADD** button.
-	 - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements*
+   - In the **Allowed Origins** enter **https://localhost:3000** in the text field and then click the **ADD** button.
+   - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements*
 	 - Click **Finish**.
 
 {:.verify}
 ### Checkpoint 3
 1. Ensure that your device is now listed in the AVS dashboard [https://developer.amazon.com/avs/home.html#/avs/home](https://developer.amazon.com/avs/home.html#/avs/homes)
-2. Click the **manage** link next to your device in the AVS dashboard. 
+2. Click the **manage** link next to your device in the AVS dashboard.
 3. Click the **Security Profile** in the left navigation under the *Details and management* section.
-4. Verify that *https://localhost:3000/authresponse* is listed under **Allowed Return URLs**. 
+4. Verify that *http://localhost:3000/authresponse* is listed under **Allowed Return URLs**.
+5. Verify that *http://localhost:3000* is listed under **Allowed Origins**.

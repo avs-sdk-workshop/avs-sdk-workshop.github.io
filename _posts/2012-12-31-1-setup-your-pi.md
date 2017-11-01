@@ -16,17 +16,16 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 {:.steps}
 ### Assembling Your Pi
 
-1. Insert Pi into the included case.
-2. Insert your micro SD card into the micro SD card slot on your Pi.
-3. Plug in the USB microphone and headphones.
+1. Check that your micro SD card is inserted into the micro SD card slot on your Pi.
+2. Plug in the USB microphone and 3.5mm earbuds.
 4. Connect the keyboard and mouse to the USB ports.
 5. Connect your monitor using the HDMI port.
-6. Connect the Ethernet Cable - or don't!
+6. Connect the Ethernet Cable.
 
 {:.steps}
 ### Booting Your Pi
 
-1. Connect to the power supply.
+1. Plug in the power supply to the micro USB connector on the Pi.
 2. If you're prompted to login - use these credentials:
    * **Username:** pi
    * **Password:** raspberry
