@@ -47,6 +47,9 @@ TIMER_SOUND_URL="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps
 TIMER_SHORT_SOUND_URL="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-voice-service/docs/audio/states/med_system_alerts_melodic_02_short._TTH_.wav"
 ALARM_SOUND_URL="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-voice-service/docs/audio/states/med_system_alerts_melodic_01._TTH_.mp3"
 ALARM_SOUND__SHORT_URL="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-voice-service/docs/audio/states/med_system_alerts_melodic_01_short._TTH_.wav"
+TEST_MODEL_DOWNLOAD="https://github.com/Sensory/alexa-rpi/blob/master/models/spot-alexa-rpi-31000.snsr"
+
+BUILD_TESTS=${BUILD_TESTS:-'true'}
 
 CURRENT_DIR="$(pwd)"
 INSTALL_BASE=${INSTALL_BASE:-"$CURRENT_DIR"}
@@ -61,6 +64,7 @@ THIRD_PARTY_PATH="$INSTALL_BASE/$THIRD_PARTY_FOLDER"
 BUILD_PATH="$INSTALL_BASE/$BUILD_FOLDER"
 SOUNDS_PATH="$INSTALL_BASE/$SOUNDS_FOLDER"
 DB_PATH="$INSTALL_BASE/$DB_FOLDER"
+UNIT_TEST_MODEL_PATH="$INSTALL_BASE/avs-device-sdk/KWD/inputs/SensoryModels"
 
 TIMER_SHORT_FILE="$SOUNDS_PATH/timer_short.wav"
 TIMER_FILE="$SOUNDS_PATH/timer.wav"
@@ -145,10 +149,23 @@ then
     -DPORTAUDIO_INCLUDE_DIR="$THIRD_PARTY_PATH/portaudio/include"
 
 
-fi
+    cd $BUILD_PATH
+    make SampleApp -j3
 
-cd $BUILD_PATH
-make SampleApp -j2
+    if [ "$BUILD_TESTS" ]
+    then
+        echo
+        echo "==============> BUILDING Tests =============="
+        echo
+        mkdir -p "$UNIT_TEST_MODEL_PATH"
+        wget -O "$UNIT_TEST_MODEL_PATH/spot-alexa-rpi-31000.snsr" "$TEST_MODEL_DOWNLOAD"
+        cd $BUILD_PATH
+        make all test -j3
+    fi
+else
+    cd $BUILD_PATH
+    make SampleApp -j3
+fi
 
 echo
 echo "==============> SAVING CONFIGURATION FILE =============="
