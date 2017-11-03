@@ -75,6 +75,7 @@ CONFIG_FILE="$BUILD_PATH/Integration/AlexaClientSDKConfig.json"
 SOUND_CONFIG="$HOME/.asoundrc"
 START_SCRIPT="$INSTALL_BASE/startsample.sh"
 START_AUTH_SCRIPT="$INSTALL_BASE/startauth.sh"
+TEST_SCRIPT="$INSTALL_BASE/test.sh"
 
 if [ ! -d "$BUILD_PATH" ]
 then
@@ -146,25 +147,16 @@ then
     -DSENSORY_KEY_WORD_DETECTOR_INCLUDE_DIR="$THIRD_PARTY_PATH/alexa-rpi/include" \
     -DGSTREAMER_MEDIA_PLAYER=ON -DPORTAUDIO=ON \
     -DPORTAUDIO_LIB_PATH="$THIRD_PARTY_PATH/portaudio/lib/.libs/libportaudio.a" \
-    -DPORTAUDIO_INCLUDE_DIR="$THIRD_PARTY_PATH/portaudio/include"
-
+    -DPORTAUDIO_INCLUDE_DIR="$THIRD_PARTY_PATH/portaudio/include" \
+    -DACSDK_EMIT_SENSITIVE_LOGS=ON \
+    -DCMAKE_BUILD_TYPE=DEBUG
 
     cd $BUILD_PATH
-    make SampleApp -j3
+    make SampleApp -j2
 
-    if [ "$BUILD_TESTS" ]
-    then
-        echo
-        echo "==============> BUILDING Tests =============="
-        echo
-        mkdir -p "$UNIT_TEST_MODEL_PATH"
-        wget -O "$UNIT_TEST_MODEL_PATH/spot-alexa-rpi-31000.snsr" "$TEST_MODEL_DOWNLOAD"
-        cd $BUILD_PATH
-        make all test -j3
-    fi
 else
     cd $BUILD_PATH
-    make SampleApp -j3
+    make SampleApp -j2
 fi
 
 echo
@@ -233,8 +225,17 @@ cd "$BUILD_PATH"
 python AuthServer/AuthServer.py
 EOF
 
+cat << EOF > "$TEST_SCRIPT" 
+echo
+echo "==============> BUILDING Tests =============="
+echo
+mkdir -p "$UNIT_TEST_MODEL_PATH"
+wget -O "$UNIT_TEST_MODEL_PATH/spot-alexa-rpi-31000.snsr" "$TEST_MODEL_DOWNLOAD"
+cd $BUILD_PATH
+make all test -j2
 chmod +x "$START_SCRIPT"
 chmod +x "$START_AUTH_SCRIPT"
+EOF
 
 echo " **** Completed Configuration/Build ***"
 
