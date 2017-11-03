@@ -19,7 +19,7 @@ You can see that it is starting with the highest debug level, **DEBUG9**.  This 
 `cd /home/pi/avs-sdk
 bash startsample.sh`
 
-2. You should see the following screen:
+You should see the following screen:
 
 ![app launched](../assets/app_launched.png)
 
