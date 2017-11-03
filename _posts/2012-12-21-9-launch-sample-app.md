@@ -8,7 +8,7 @@ layout: nil
 
 The sample application is in the folder */home/pi/avs-sdk/build/SampleApp/src*. In order to start it, we'll use a shell script called **startsample.sh**. To see how it is being started, you can use File Manager to navigate to */home/pi/avs-sdk* and use your text editor to view the contents :
 
-<Insert Screenshot Here>
+![debug](../assets/startsample_debug9.png)
 
 You can see that it is starting with the highest debug level, **DEBUG9**.  This will display status messages in the console as you communicate with Alexa.  If you want to reduce output, simply change that to a lower number or remove it altogether. For starters, try it at the highest level so you can see what is going on behind the scenes.
 
