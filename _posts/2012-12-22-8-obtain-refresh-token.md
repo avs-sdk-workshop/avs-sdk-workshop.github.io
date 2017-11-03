@@ -9,17 +9,17 @@ You now have the SDK installed, but your specific device still needs a **refresh
 
 The install process created a few shell scripts for you to launch the application that generates the authorization token (**startauth.sh**) and that starts the sample application (**startsample.sh**)
 
-##Terminal Window
+## Terminal Window
 {:.steps}
 
-1. Copy and paste the following command into a terminal window to navigate to the *avs-sdk* directory and run the **startauth.sh** script:
+Copy and paste the following command into a terminal window to navigate to the *avs-sdk* directory and run the **startauth.sh** script:
 
 `cd home/pi/avs-sdk
 bash startauth.sh`
 
-2. In your Web Browser, go to [http://localhost:3000](http://localhost:3000)
-3. You'll be prompted to log into Amazon to generate the refresh token.
-4. Your browser page should show that it succeeded, and the auth server will automatically terminate.  Close the browser window to continue.
+In your Web Browser, go to [http://localhost:3000](http://localhost:3000)
+You'll be prompted to log into Amazon to generate the refresh token.
+Your browser page should show that it succeeded, and the auth server will automatically terminate.  Close the browser window to continue.
 
     ![refresh token success](../assets/refresh_token.png)
 

@@ -14,7 +14,7 @@ You can see that it is starting with the highest debug level, **DEBUG9**.  This 
 
 ## Terminal Window
 {:.steps}
-1. From a terminal window, run **startsample.sh** to launch the Sample App.
+From a terminal window, run **startsample.sh** to launch the Sample App.
 
 `cd /home/pi/avs-sdk
 bash startsample.sh`
@@ -26,6 +26,6 @@ You should see the following screen:
 {:.verify}
 ### Checkpoint 9
 
-1. Say "Alexa" into the mic on your Raspberry Pi. You should see the console status change to **Listening**, then say "tell me a joke." If Alexa responds with **Thinking...**, you have a working prototype.  You should see a series of status changes annotated by your level of DEBUG set in the above startsample script.  If you cannot hear Alexa's response, ensure your speaker/earbuds are turned on and plugged in to your Raspberry Pi's 3.5mm audio jack.
+Say "Alexa" into the mic on your Raspberry Pi. You should see the console status change to **Listening**, then say "tell me a joke." If Alexa responds with **Thinking...**, you have a working prototype.  You should see a series of status changes annotated by your level of DEBUG set in the above startsample script.  If you cannot hear Alexa's response, ensure your speaker/earbuds are turned on and plugged in to your Raspberry Pi's 3.5mm audio jack.
 
 ![app running](../assets/app_running.png)
