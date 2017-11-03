@@ -9,6 +9,7 @@ You now have the SDK installed, but your specific device still needs a **refresh
 
 The install process created a few shell scripts for you to launch the application that generates the authorization token (**startauth.sh**) and that starts the sample application (**startsample.sh**)
 
+##Terminal Window
 {:.steps}
 
 1. Copy and paste the following command into a terminal window to navigate to the *avs-sdk* directory and run the **startauth.sh** script:
