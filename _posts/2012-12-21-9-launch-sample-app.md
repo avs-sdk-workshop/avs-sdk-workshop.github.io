@@ -22,6 +22,7 @@ bash startsample.sh`
 2. You should see the following, if you don't, please ask for help:
 
 <TODO: insert a successful start screen>
+![](assets/app-launched.png)
 
 {:.verify}
 ### Checkpoint 9
