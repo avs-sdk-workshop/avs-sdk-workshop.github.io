@@ -19,12 +19,13 @@ You can see that it is starting with the highest debug level, **DEBUG9**.  This 
 `cd /home/pi/avs-sdk
 bash startsample.sh`
 
-2. You should see the following, if you don't, please ask for help:
+2. You should see the following screen:
 
-<TODO: insert a successful start screen>
-![](assets/app-launched.png)
+![app launched](../assets/app_launched.png)
 
 {:.verify}
 ### Checkpoint 9
 
-1. Say "Alexa". You should see the console status change to **Listening**, then say "tell me a joke." If Alexa responds, you have a working prototype.
+1. Say "Alexa". You should see the console status change to **Listening**, then say "tell me a joke." If Alexa responds, you have a working prototype.  You should see a series of status changes annotated by your level of DEBUG set in the above
+
+![app running](../assets/app_running.png)

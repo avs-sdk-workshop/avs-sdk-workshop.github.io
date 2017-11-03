@@ -20,10 +20,11 @@ Note if you have made an error in filling out the **config.sh** file with your a
 
 Once the script is running, you'll be prompted to accept the Sensory agreement during installation.  Hit the return key to scroll through the terms and conditions until prompted for a yes/no.  Type "y" and hit return to continue. Otherwise all steps are covered in the script execution for setup.
 
-You can use the text editor to view the contents of the **setup.sh** file. It's a relatively simple script designed to run on a clean install of the Raspbian **stretch** OS.
+If your build was successful, you'll receive a printout of your configuration details (such as Client ID and Client Secret) plus a message informing you that Configuration/Build was successful.
 
-**Note** for the purposes of this workshop, portions of the script have been pre-built to get your client up and running faster.  If you use this script for an install on a clean OS image, expect it to take around 20 minutes to build.
+![build success](../assets/build_successful.png)
 
+**Note** for the purposes of this workshop, portions of the script have been pre-built to get your client up and running faster.  If you use this script for an install on a clean OS image, expect it to take around 20 minutes to build.  You can use the text editor to view the contents of the **setup.sh** file. It's a relatively simple script designed to run on a clean install of the Raspbian **stretch** OS.
 
 {:.verify}
 ### Checkpoint 6

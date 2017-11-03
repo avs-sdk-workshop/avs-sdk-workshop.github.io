@@ -18,6 +18,7 @@ bash startauth.sh`
 2. In your Web Browser, go to [http://localhost:3000](http://localhost:3000)
 3. You'll be prompted to log into Amazon to generate the refresh token.
 4. Your browser page should show that it succeeded, and the auth server will automatically terminate.  Close the browser window to continue.
+
     ![refresh token success](../assets/refresh_token.png)
 
 
