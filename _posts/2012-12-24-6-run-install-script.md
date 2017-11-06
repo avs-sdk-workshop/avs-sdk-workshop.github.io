@@ -12,7 +12,7 @@ You are now ready to run the install script. This will install all dependencies,
 
 {:.steps}
 
-To run the script,  open a **terminal** by clicking on the console window in the Pi's toolbar at the upper left of the screen. There should be two scripts in your *home/pi/avs-sdk* directory: **config.sh** that you just populated, and **setup.sh** which uses the data from your config file to run the install script. Copy and paste the following command into your terminal window, and hit return to run the following:
+To run the script,  open a **terminal** by clicking on the console window in the Pi's toolbar at the upper left of the screen. There should be two scripts in your */home/pi/avs-sdk* directory: **config.sh** that you just populated, and **setup.sh** which uses the data from your config file to run the install script. Copy and paste the following command into your terminal window, and hit return to run the following:
 
 `cd /home/pi/avs-sdk
 bash setup.sh config.sh
@@ -24,7 +24,7 @@ Once the script is running, you'll be prompted to accept the Sensory agreement d
 
 If your build was successful, you'll receive a printout of your configuration details (such as Client ID and Client Secret) plus a message informing you that Configuration/Build was successful.
 
-![build success](../assets/build_successful.png)
+![build success](/assets/build_successful.png)
 
 **Note** for the purposes of this workshop, portions of the script have been pre-built to get your client up and running faster.  If you use this script for an install on a clean OS image, expect it to take around 20 minutes to build.  You can use the text editor to view the contents of the **setup.sh** file. It's a relatively simple script designed to run on a clean install of the Raspbian **stretch** OS.
 
