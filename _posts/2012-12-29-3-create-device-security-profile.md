@@ -24,7 +24,7 @@ After you've registered for an Amazon developer account, you'll need to create a
 4. Select **No** for *Will your device include a companion app?*
 5. Choose a product category, any category will work, and add a description.
 6. Select **Hands-free** for *How will users interact with your product?*
-7. Image: Right click on this link to save this test image to your computer (or use your own), then upload it:   [https://developer.amazon.com/public/binaries/content/gallery/developerportalpublic/solutions/alexa/alexa-voice-service/images/reference-implementation-image.png](https://developer.amazon.com/public/binaries/content/gallery/developerportalpublic/solutions/alexa/alexa-voice-service/images/reference-implementation-image.png)
+7. Image: Open this link on a new page and save the test image to your computer (or use your own), then upload it:   [https://developer.amazon.com/public/binaries/content/gallery/developerportalpublic/solutions/alexa/alexa-voice-service/images/reference-implementation-image.png](https://developer.amazon.com/public/binaries/content/gallery/developerportalpublic/solutions/alexa/alexa-voice-service/images/reference-implementation-image.png)
 8. Select **No** for *Do you intend to distribute this product commercially?*
 9. Select **No** for *Is this a children’s product or is it otherwise directed to children younger than 13 years old?*
 10. Click **Next**
@@ -49,6 +49,8 @@ After you've registered for an Amazon developer account, you'll need to create a
    - In the **Allowed Origins** enter **http://localhost:3000** in the text field and then click the **ADD** button.  This will allow your client to request the refresh token from the cloud.
    - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements*
 	 - Click **Finish**.
+
+![ProfileInfo2](../assets/Profile.png)   
 
 {:.verify}
 ### Checkpoint 3
