@@ -19,11 +19,11 @@ PRODUCT_ID=""
 2. In your web browswer, Navigate back to the AVS dashboard:  [https://developer.amazon.com/avs/home.html#/avs/home](https://developer.amazon.com/avs/home.html#/avs/home).
 3. Click **Manage**. From **Details and management** copy your **Product ID** (no spaces) into the `PRODUCT_ID` field of your **config.sh** file.
 4. Select **Security Profile** from the left tab and copy your **Client ID** and **Client Secret**.  
-5. Place the **ClientID** and **ClientSecret** into the `CLIENT_ID` and `CLIENT_SECRET` fields.  The device serial number can be any alpha-numeric value (here it's 123456):
+5. Place the **ClientID** and **ClientSecret** into the `CLIENT_ID` and `CLIENT_SECRET` fields.  The device serial number is created by device makers and isn't used by AVS - for this workshop, it can be any alpha-numeric value (here it's 123456):
 
 example:
 
-`CLIENT_SECRET="1234567890123456789012345678901234567890123456789012345678901234"
+`CLIENT_SECRET="12345678901234567890128901234567890123456789012345678901234"
 DEVICE_SERIAL_NUMBER="123456"
 CLIENT_ID="amzn1.application-oa2-client.12345678901234567890123456789012"
 PRODUCT_ID="TEST_SPEAKER"

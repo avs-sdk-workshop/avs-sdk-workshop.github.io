@@ -27,7 +27,7 @@ You should see the following screen indicating that the Sample App is ready for 
 ### Checkpoint 9
 
 Say "Alexa" into the mic on your Raspberry Pi. You should see the console status change to **Listening**, then say "tell me a joke." If Alexa responds with **Thinking...**, you have a working prototype.  
-You should see a series of status changes annotated by your level of DEBUG set in the above startsample script.  
+You should see a series of status changes annotated by your level of DEBUG set (DEBUG9 in this picture).  
 If you cannot hear Alexa's response, ensure your speaker/earbuds are turned on and plugged in to your Raspberry Pi's 3.5mm audio jack.
 
 ![app running](../assets/app_running.png)
