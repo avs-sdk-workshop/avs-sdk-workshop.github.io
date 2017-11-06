@@ -10,8 +10,6 @@ layout: nil
 
 You are now ready to run the install script. This will install all dependencies, including the  wake word engine from Sensory.
 
-{:.steps}
-
 To run the script,  open a **terminal** by clicking on the console window in the Pi's toolbar at the upper left of the screen. There should be two scripts in your */home/pi/avs-sdk* directory: **config.sh** that you just populated, and **setup.sh** which uses the data from your config file to run the install script. Copy and paste the following command into your terminal window, and hit return to run the following:
 
 `cd /home/pi/avs-sdk
