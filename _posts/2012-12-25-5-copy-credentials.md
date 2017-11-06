@@ -5,7 +5,7 @@ title: '5. Copy Your Credentials'
 layout: nil
 ---
 
-1. Open the File Explorer by clicking on the folder icon on your Pi's toolbar at the top left.  It should come up in the **/home/pi** folder.  Navigate to the **avs-device-sdk** folder.  Right-click on **config.sh** and select "Text Editor" to open your configuration file.  It should contain the following fields:
+1. On your Raspberry Pi, open the File Explorer by clicking on the folder icon on your toolbar at the top left.  It should come up in the **/home/pi** folder.  Navigate to the **avs-sdk** folder.  Right-click on **config.sh** and select "Text Editor" to open your configuration file.  It should contain the following fields:
 
 `CLIENT_SECRET=""
 DEVICE_SERIAL_NUMBER=""

@@ -19,4 +19,4 @@ layout: nil
 {:.verify}
 ### Checkpoint 4
 
-1. Ensure that your security profile appears under **Login with Amazon Configurations**.
+1. Ensure that your security profile appears under **Login with Amazon Configurations** at [https://developer.amazon.com/lwa/sp/overview.html](https://developer.amazon.com/lwa/sp/overview.html).

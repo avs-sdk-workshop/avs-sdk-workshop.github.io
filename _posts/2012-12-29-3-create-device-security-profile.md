@@ -18,8 +18,8 @@ After you've registered for an Amazon developer account, you'll need to create a
 {:.tab}
 #### Device Type Info
 
-1. **Product Name**: the display name in the developer portal, as well as the name that will be provided to your users when they register the product with Amazon.
-2. **Product ID**: provide a simple identifier for your product. **No spaces.**
+1. **Product Name**: the display name in the developer portal, as well as the name that will be provided to your users when they register the product with Amazon.  For example, **"Test Speaker"**
+2. **Product ID**: provide a simple identifier for your product. **No spaces.**  For example, **"TestSpeaker"**
 3. Select **Device** for *Is your product an app or a device?*
 4. Select **No** for *Will your device include a companion app?*
 5. Choose a product category, any category will work, and add a description.
@@ -45,8 +45,8 @@ After you've registered for an Amazon developer account, you'll need to create a
 	 Client ID and Client Secret will be generated for you.
 
 3. Select **Web** from the Web - Android/Kindle - iOS options under **Security Profile ID** in the **Security Profile** section.
-	 - In the **Allowed Return URLs** enter **https://localhost:3000/authresponse** in the text field and then click the **ADD** button.  This will allow AVS to deliver a *refresh token* to your device, enabling it to connect to the AVS in the cloud.
-   - In the **Allowed Origins** enter **https://localhost:3000** in the text field and then click the **ADD** button.  This will allow your client to request the refresh token from the cloud.
+	 - In the **Allowed Return URLs** enter **http://localhost:3000/authresponse** in the text field and then click the **ADD** button.  This will allow AVS to deliver a *refresh token* to your device, enabling it to connect to the AVS in the cloud.
+   - In the **Allowed Origins** enter **http://localhost:3000** in the text field and then click the **ADD** button.  This will allow your client to request the refresh token from the cloud.
    - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements*
 	 - Click **Finish**.
 
