@@ -46,11 +46,11 @@ After you've registered for an Amazon developer account, you'll need to create a
 
 3. Select **Web** from the Web - Android/Kindle - iOS options under **Security Profile ID** in the **Security Profile** section.
 	 - In the **Allowed Return URLs** enter **http://localhost:3000/authresponse** in the text field and then click the **ADD** button.  This will allow AVS to deliver a *refresh token* to your device, enabling it to connect to the AVS in the cloud.
-   - In the **Allowed Origins** enter **http://localhost:3000** in the text field and then click the **ADD** button.  This will allow your client to request the refresh token from the cloud.
+   - In the **Allowed Origins** enter **http://localhost:3000** in the text field and then click the **ADD** button.  This will allow your client to request the refresh token from the AVS.
    - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements*
 	 - Click **Finish**.
 
-![ProfileInfo2](../assets/Profile.png)   
+![ProfileInfo2](/assets/Profile.png)   
 
 {:.verify}
 ### Checkpoint 3
