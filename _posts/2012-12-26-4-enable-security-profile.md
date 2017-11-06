@@ -14,7 +14,7 @@ layout: nil
 4. [Optional] You may upload an image as well. The image will be shown on the Login with Amazon consent page to give your users context.
 5. Click Save.
 
-	 ![](assets/avs-privacy-url.png)
+	 ![](../assets/avs-privacy-url.png)
 
 {:.verify}
 ### Checkpoint 4

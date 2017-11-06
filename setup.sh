@@ -197,7 +197,7 @@ echo
 cat $CONFIG_FILE
 
 echo
-echo "==============> SAVING AUDIL CONFIGURATION FILE =============="
+echo "==============> SAVING AUDIO CONFIGURATION FILE =============="
 echo
 
 cat << EOF > "$SOUND_CONFIG"
