@@ -6,4 +6,4 @@
 components/
 
 _site/
-_*
+_*.sh
