@@ -6,7 +6,7 @@ layout: nil
 
 
 
-The sample application is in the folder */home/pi/avs-sdk/build/SampleApp/src*. In order to start it, we'll use a shell script called **startsample.sh**. To see how it is being started, you can use File Manager to navigate to */home/pi/avs-sdk* and use your text editor to view the contents :
+The sample application is in the folder */home/pi/avs-sdk/build/SampleApp/src*. In order to start it, we'll use a shell script called **startsample.sh**. To see how it is being started, you can use File Manager to navigate to */home/pi/avs-sdk* and use your text editor to view the contents:
 
 ![debug](../assets/startsample_debug9.png)
 
@@ -29,5 +29,6 @@ You should see the following screen indicating that the Sample App is ready for 
 Say "Alexa" into the mic on your Raspberry Pi. You should see the console status change to **Listening**, then say "tell me a joke." If Alexa responds with **Thinking...**, you have a working prototype.  
 You should see a series of status changes annotated by your level of DEBUG set (DEBUG9 in this picture).  
 If you cannot hear Alexa's response, ensure your speaker/earbuds are turned on and plugged in to your Raspberry Pi's 3.5mm audio jack.
+If Alexa isn't responding and appears stuck at a certain step, just type "**s**" and hit return to stop that interaction.
 
 ![app running](../assets/app_running.png)
