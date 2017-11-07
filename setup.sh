@@ -122,7 +122,6 @@ then
     echo "==============> CLONING SDK =============="
     echo
 
-
     cd $SOURCE_PATH
     git clone git://github.com/alexa/avs-device-sdk.git
 
