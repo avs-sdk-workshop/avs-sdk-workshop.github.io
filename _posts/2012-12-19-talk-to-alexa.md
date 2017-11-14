@@ -22,6 +22,16 @@ You can now talk to your Pi by simply saying the wake word "Alexa". Try the foll
 * Say "Alexa", then ask "Where were you born?"
 * Say "Alexa", then ask "Can you rap?"
 
+### Try a Multi-Turn interaction
+
+* Say "Alexa", then ask "Set an alarm for 12:30."  You should receive a response asking you to clarify AM or PM.  If you have DEBUG9 active, you'll see that the state of the Audio Input Processor has changed from `IDLE` to `LISTENING` without requiring a wake word!  In multi-turn interactions, you can continue to speak with Alexa as part of a continuing conversation without starting every phrase with "Alexa".
+
+<add picture of DEBUG9 terminal here>
+
+### Other Multi-Turn interactions to Try
+
+* Say "Alexa, Wikipedia" - you'll have the option of looking up any subject.
+
 
 {:.verify}
 ### Look ma, no more checkpoints!
