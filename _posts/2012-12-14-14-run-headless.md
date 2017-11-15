@@ -1,5 +1,5 @@
 ---
-title: 'Extra Credit'
+title: '14. Connect remotely using SSH and VNC'
 
 
 layout: nil

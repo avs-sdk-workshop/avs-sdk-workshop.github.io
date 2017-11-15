@@ -1,5 +1,5 @@
 ---
-title: '11. Talk to Alexa'
+title: '10. Talk to Alexa'
 
 
 layout: nil
@@ -13,7 +13,7 @@ You can now talk to your Pi by simply saying the wake word "Alexa". Try the foll
 * Say "Alexa", then ask "What time is it?"  
 * Say "Alexa", then ask "What's the weather in Las Vegas?"  
 * Say "Alexa", then say "Set a timer for 5 seconds."
-* Say "Alexa", then say "Play Z100."
+* Say "Alexa", then say "Play BBC news on TuneIn."
 * Say "Alexa", then say "Good afternoon."
 * Say "Alexa", then say "Tell me a joke."
 * Say "Alexa", then ask "What's the meaning of life?"
