@@ -8,7 +8,7 @@ layout: nil
 {:.steps}
 ### Register Your Product and Create a Security Profile
 
-After you've registered for an Amazon developer account, you'll need to create an Alexa device and security profile. This will enable your client to connect to the Alexa Voice Service in the cloud.
+After you've registered for an Amazon developer account, you'll need to create an Alexa device and security profile. This will enable your client to connect to the Alexa Voice Service (AVS) in the cloud.
 
 1. Login to Amazon Developer Portal - [developer.amazon.com](https://developer.amazon.com/login.html)
 2. Click on Alexa tab, and then click on Get Started button under Alexa Voice Service.
@@ -44,10 +44,11 @@ After you've registered for an Amazon developer account, you'll need to create a
 
 	 Client ID and Client Secret will be generated for you.
 
-3. Select **Web** from the Web - Android/Kindle - iOS options under **Security Profile ID** in the **Security Profile** section.
-	 - In the **Allowed Return URLs** enter `http://localhost:3000/authresponse` in the text field and then click the **ADD** button.  This will allow AVS to deliver a *refresh token* to your device, enabling it to connect to the AVS in the cloud.
-   - In the **Allowed Origins** enter `http://localhost:3000` in the text field and then click the **ADD** button.  This will allow your client to request the refresh token from the AVS.
-   - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements*
+3. Select **Web** from the Web - Android/Kindle - iOS options under **Security Profile ID** in the **Platform Information** section.
+
+   - In the **Allowed Origins** enter `http://localhost:3000` in the text field and then click the **ADD** button.  This will allow your client to request a unique *refresh token* from the AVS, enabling your specific device to connect to Alexa.
+   - In the **Allowed Return URLs** enter `http://localhost:3000/authresponse` in the text field and then click the **ADD** button.  This will allow AVS to deliver the refresh token to your device.
+   - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements.*
 	 - Click **Finish**.
 
 ![ProfileInfo2](/assets/Profile.png)   
