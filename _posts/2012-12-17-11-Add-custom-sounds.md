@@ -7,7 +7,9 @@ layout: nil
 
 ### Modify your UImanager file
 
-Navigate to /home/pi/avs-sdk/avs-device-sdk/SampleApp/src/ and open UIManager.cpp with a text editor.
+If you're speaking to an Alexa-enabled device, you may want an indicator that your wake word was heard.  In some cases, this may be an LED activating on the device.  But what if you can't see the device?  In this case, your device may want to play an audio cue to confirm when Alexa hears you.  In this step, you'll modify the User Interface Manager to play a **Ding!** each time Alexa's state changes to `LISTENING`.
+
+Navigate to */home/pi/avs-sdk/avs-device-sdk/SampleApp/src/* and open UIManager.cpp with a text editor.
 
 At the top, add `#include <cstdlib>`
 

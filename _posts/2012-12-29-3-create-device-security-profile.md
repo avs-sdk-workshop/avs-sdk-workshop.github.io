@@ -58,5 +58,5 @@ After you've registered for an Amazon developer account, you'll need to create a
 1. Ensure that your device is now listed in the AVS dashboard [https://developer.amazon.com/avs/home.html#/avs/home](https://developer.amazon.com/avs/home.html#/avs/homes)
 2. Click the **manage** link next to your device in the AVS dashboard.
 3. Click the **Security Profile** in the left navigation under the *Details and management* section.
-4. Verify that `http://localhost:3000/authresponse` is listed under **Allowed Return URLs**.
-5. Verify that `http://localhost:3000` is listed under **Allowed Origins**.
+4. Verify that `http://localhost:3000` is listed under **Allowed Origins**.
+5. Verify that `http://localhost:3000/authresponse` is listed under **Allowed Return URLs**.

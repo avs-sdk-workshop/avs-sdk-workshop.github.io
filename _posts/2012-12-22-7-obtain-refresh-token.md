@@ -15,6 +15,7 @@ Copy and paste the following command into a terminal window to navigate to the *
 `cd /home/pi/avs-sdk
 bash startauth.sh`
 
+Your terminal window will display an error message saying token not found, but it's okay!  Just follow the below instructions to get a new token.
 In your Web Browser, go to [http://localhost:3000](http://localhost:3000).  
 You'll be prompted to log into Amazon to generate the refresh token.
 Your browser page should show that it succeeded, and the auth server will automatically terminate.  Close the browser window to continue.

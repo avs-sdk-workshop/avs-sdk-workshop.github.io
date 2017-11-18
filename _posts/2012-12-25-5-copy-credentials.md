@@ -5,7 +5,7 @@ title: '5. Copy Your Credentials'
 layout: nil
 ---
 
-1. On your Raspberry Pi, open the File Explorer by clicking on the folder icon on your toolbar at the top left.  It should come up in the **/home/pi** folder.  Navigate to the **avs-sdk** folder.  Right-click on **config.sh** and select "Text Editor" to open your configuration file.  
+1. On your Raspberry Pi, open the File Explorer by clicking on the folder icon on your toolbar at the top left.  It should come up in the */home/pi* folder.  Navigate to the *avs-sdk* folder.  Right-click on **config.sh** and select "Text Editor" to open your configuration file.  
 
 ![](assets/config_file.png)
 
@@ -22,7 +22,7 @@ PRODUCT_ID=""
 5. Place the **ClientID** and **ClientSecret** into the `CLIENT_ID` and `CLIENT_SECRET` fields.  
 6. The **device serial number** is created by device makers and isn't used by AVS - for this workshop, it can be any alpha-numeric value (here it's 123456):
 
-example:
+Your completed config.sh fields will look something like this:
 
 `CLIENT_SECRET="12345678901234567890128901234567890123456789012345678901234"
 DEVICE_SERIAL_NUMBER="123456"
@@ -33,4 +33,4 @@ PRODUCT_ID="TEST_SPEAKER"
 
 ### Checkpoint 5
 
-1. Make sure you've saved the config.sh file in your /home/pi folder with your **Device Type ID**, **Device Serial Number**, **Client ID** and **Client Secret**.
+1. Make sure you've saved the config.sh file in your */home/pi* folder with your **Device Type ID**, **Device Serial Number**, **Client ID** and **Client Secret**.
