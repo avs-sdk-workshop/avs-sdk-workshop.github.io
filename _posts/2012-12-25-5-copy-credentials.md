@@ -16,7 +16,7 @@ DEVICE_SERIAL_NUMBER=""
 CLIENT_ID=""
 PRODUCT_ID=""
 `
-2. In your web browswer, Navigate back to the AVS dashboard:  [https://developer.amazon.com/avs/home.html#/avs/home](https://developer.amazon.com/avs/home.html#/avs/home).
+2. In your web browser, Navigate back to the AVS dashboard:  [https://developer.amazon.com/avs/home.html#/avs/home](https://developer.amazon.com/avs/home.html#/avs/home).
 3. Click **Manage**. From **Details and management** copy your **Product ID** (no spaces) into the `PRODUCT_ID` field of your **config.sh** file.
 4. Select **Security Profile** from the left tab and copy your **Client ID** and **Client Secret**.  
 5. Place the **ClientID** and **ClientSecret** into the `CLIENT_ID` and `CLIENT_SECRET` fields.  

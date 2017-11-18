@@ -20,7 +20,10 @@ Don't forget to save your text file before closing it!
 Then, rebuild the sample app:
 Open a terminal and navigate to /home/pi/avs-sdk/build/SampleApp/ in a terminal and type `make`
 
-After it successfully rebuilds (you should see SampleApp recompile) then navigate back to the /home/pi/avs-sdk directory and relaunch 
+After it successfully rebuilds (you should see SampleApp recompile) then navigate back to the /home/pi/avs-sdk directory and relaunch
 
-Now, every time the wake word is spoken and Alexa's state changes to "listening" you should hear your custom sound.  Experiment with different states and sounds!
+Now, every time the wake word is spoken and Alexa's state changes to "listening" you should hear your custom sound.  Your /home/pi/CustomSounds folder has several different .wav files - experiment with different sounds at various states in the UI manager!
+
+Your customers will expect their experience to be consistent across many Alexa-enabled devices.  You can learn best practices for implementing visual and audio cues on your device by visiting our [AVS UX Design overview page](https://developer.amazon.com/docs/alexa-voice-service/ux-design-overview.html).
+
 ---

@@ -5,7 +5,7 @@ title: '7. Obtain a refresh token'
 layout: nil
 ---
 The install process created a few shell scripts for you - **startauth.sh** to get you the authorization token, and **startsample.sh** to run the Sample App.
-You now have the SDK installed, but your device still needs a **refresh token** in order to enable your client to maintain a connection to the AVS in the cloud.  If you ship a million Alexa-enabled devices, they could all use the same Client ID, Client Secret, and ProductID - but each *individual* device requires a unique refresh token to authenticate with the AVS through Login With Amazon (LWA).
+Your device has the SDK installed and your credentials loaded, but your device still needs a **refresh token** in order to enable your client to maintain a connection to the AVS in the cloud.  If you design an Alexa-enabled device, and ship a million of them to your customers, they could all use the same Client ID, Client Secret, and ProductID - but each *individual* device will require a unique refresh token to authenticate with the AVS through Login With Amazon (LWA).
 
 ## Terminal Window
 {:.steps}
