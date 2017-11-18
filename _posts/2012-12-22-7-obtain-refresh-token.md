@@ -24,7 +24,7 @@ Your browser page should show that it succeeded, and the auth server will automa
 
 
 {:.verify}
-### Checkpoint 8
+### Checkpoint 7
 
 1. From the File Manager, navigate to */home/pi/avs-sdk/build/Integration* and open **AlexaClientSDKConfig.json** by right-clicking on it and selecting **Text Editor**.
 2. Verify that you have populated fields for everything in the **authDelegate** section, including **refreshToken** (it should be a very long string of characters).
