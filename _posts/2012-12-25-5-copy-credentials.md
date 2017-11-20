@@ -30,7 +30,6 @@ CLIENT_ID="amzn1.application-oa2-client.12345678901234567890123456789012"
 PRODUCT_ID="TEST_SPEAKER"
 `
 {:.verify}
-
 ### Checkpoint 5
 
-1. Make sure you've saved the config.sh file in your */home/pi* folder with your **Device Type ID**, **Device Serial Number**, **Client ID** and **Client Secret**.
+1. Make sure you've saved the **config.sh** file in your */home/pi* folder with your **Device Type ID**, **Device Serial Number**, **Client ID** and **Client Secret**.
