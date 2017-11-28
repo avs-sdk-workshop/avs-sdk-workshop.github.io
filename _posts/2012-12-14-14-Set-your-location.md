@@ -17,4 +17,5 @@ Select your device, and change the location by Zip Code to whatever you prefer. 
 
 You won't need to restart your Sample App to see the change - as soon as you update your setting in the cloud, you'll receive data for that location.  Try asking Alexa what the weather is again and see where your device is now "located"!    
 
+Click back on your "home" tab on the left-side menu of Alexa.Amazon.com - you'll find a lot of interesting settings to experiment with.  You can also hear back your recent requests - listen to them and you might hear how important the choice of microphone is for your device.  
 ---

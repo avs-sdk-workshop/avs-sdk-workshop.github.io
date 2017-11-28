@@ -1,21 +1,21 @@
 ---
-title: '8. Run unit test'
+title: '8. Run Unit Test'
 
 
 layout: nil
 ---
 This assumes the build is in the directory created by the script (avs-sdk).
 
-{:.steps}
+
 
 #### Unit Tests
 
-1. Go to the terminal window, and run the following steps to execute the series of Unit tests on your prototype.
+Go to the terminal window, and run the following steps to execute the series of Unit tests on your prototype.
 
 `cd /home/pi/avs-sdk/build
 make all test
 `
-2. For this workshop, tests have been pre-built to save time.  If you have your earbuds or speakers in, you'll hear Alexa run through a series of audio tests as well as functional tests.
+For this workshop, tests have been pre-built to save time.  If you have your earbuds or speakers in, you'll hear Alexa run through a series of audio tests as well as functional tests.
 
 
 

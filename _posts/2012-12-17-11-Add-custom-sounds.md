@@ -7,9 +7,8 @@ layout: nil
 
 ### Modify your UImanager file
 
-If you're speaking to an Alexa-enabled device, you may want an indicator that your wake word was heard.  In some cases, this may be an LED activating or changing color on the device.  But what if you can't see the device?  In this case, you may want your device to play an audio cue to confirm when Alexa hears you.  In this step, you'll modify the **User Interface Manager** to play a **Ding!** each time Alexa's state changes to `LISTENING`.
+If you're speaking to an Alexa-enabled device, you may want an indicator that your wake word was heard.  In some cases, this may be an LED activating or changing color on the device.  But what if you can't see the device?  In this case, you may want your device to play an audio cue to confirm when Alexa hears you.  In this step, you'll modify the **User Interface Manager** to play a **Ding!** each time Alexa's state changes to **LISTENING**.
 
-{:.steps}
 
 1. Navigate to */home/pi/avs-sdk/avs-device-sdk/SampleApp/src/* and open UIManager.cpp with a text editor.
 
@@ -38,8 +37,8 @@ bash startsample.sh
 {:.verify}
 ### Checkpoint 11
 
-Every time you speak the wake word "Alexa" to your prototype (Alexa's state changes to "Listening...") you should hear your custom sound play, indicating that Alexa has opened a channel to the cloud and is ready for your request.  The */home/pi/CustomSounds* folder has several different .wav files - experiment with different sounds at various states in the UI manager!
+Every time you speak the wake word "Alexa" to your prototype (Alexa's state changes to "Listening...") you should hear your custom sound play, indicating that Alexa has opened a channel to the cloud and is ready for your request.  If you initiate a multi-turn interaction, you'll also hear the sound when Alexa is awaiting your answer.  Download some of your own .wav files and experiment with different sounds at various states in the UI manager!
 
-Your customers will expect their experience to be consistent across many Alexa-enabled devices.  You can learn best practices for implementing visual and audio cues on your device by visiting our [AVS UX Design overview page](https://developer.amazon.com/docs/alexa-voice-service/ux-design-overview.html).
+Keep in mind that when you ship your product, your customers will expect their experience to be consistent across any Alexa-enabled devices they interact with.  You can learn best practices for implementing visual and audio cues on your device by visiting our [AVS UX Design overview page](https://developer.amazon.com/docs/alexa-voice-service/ux-design-overview.html).
 
 ---

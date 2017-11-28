@@ -9,7 +9,7 @@ layout: nil
 
 If your Alexa-enabled device has a screen capable of displaying graphics or text, you can add visual metadata (Display Cards) to your responses from Alexa.  You'll need to register your product according to its capability in order to get this data from the AVS.
 
-Navigate back to your developer portal at [developer.amazon.com](https://developer.amazon.com/login.html).  Select "manage" on your device, and navigate to the **capabilities** tab under **Details and management**.  Check the box for **Display Cards** and choose **Display Cards with Media** from the list.  Click **Update** to save your changes.  You should get a pop-up confirming your change was successful.
+Navigate back to your developer portal at [developer.amazon.com](https://developer.amazon.com/login.html).  Select "manage" on your device, and navigate to the **Capabilities** tab under **Details and management**.  Check the box for **Display Cards** and choose **Display Cards with Media** from the list.  Click **Update** to save your changes.  You should get a pop-up confirming your change was successful.
 
 ![DisplayCards](assets/DisplayCards.png)
 

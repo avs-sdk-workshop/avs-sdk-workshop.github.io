@@ -7,7 +7,7 @@ layout: nil
 
 ### Modify your Alexa Focus Manager Library behavior
 
-Your device only has one speaker - but at any given time, there might be multiple **Capability Agents** that wish to use it.  The **Focus Manager** exists to ensure a consistent user experience and prevent the chaos of multiple agents speaking over each other at the same time.  How does it know what to give control of the speaker to?  We've divided different functions (such as **Speech**, **Alarms**, and **Music**) into various **Channels** that take priority over each other in a structure determined by the Focus Manager.  
+Your device only has one speaker - but at any given time, there might be multiple **Capability Agents** that wish to use it.  The **Focus Manager** exists to ensure a consistent user experience and prevent the chaos of multiple agents speaking over each other at the same time.  But how does it know what to give control of the speaker to?  We've divided different functions (such as **Speech**, **Alarms**, and **Music**) into various **Channels** that take priority over each other in a structure determined by the Focus Manager.  
 
 What if your device's specific use case involved critical functions that you didn't want interrupted?  For example - if you were building an automotive navigation system, your users wouldn't want to miss Alexa's driving directions because an alarm went off and took control of your speaker.  Let's try an example interaction to learn about the behavior of your Sample App's Focus Manager.
 
@@ -40,7 +40,7 @@ Imagine if that song was actually directions, about to instruct you to exit off 
 {:.steps}
 ### Rebuild your modified Sample app
 
-1.  You'll need to rebuild the Sample App for the changes to take effect.  First, quit out of your existing instance of the Sample App (if it's still running) by typing "**q** and hitting **return**.  Open a terminal and input the following command to rebuild the Sample App:
+1.  You'll need to rebuild the Sample App for the changes to take effect.  First, quit out of your existing instance of the Sample App (if it's still running) by typing "**q**"" and hitting **return**.  Open a terminal and input the following command to rebuild the Sample App:
 `cd /home/pi/avs-sdk/build/SampleApp
 make
 `
@@ -51,7 +51,7 @@ make
 bash startsample.sh
 `
 5.  Now, start a 30 second timer again and ask for another song from Alexa.
-6.  Despite your timer goes off, your song keeps playing!  Congratulations!
+6.  Despite your timer going off, your song keeps playing!  Congratulations!
 
 Feel free to experiment with other priorities in the Focus Manager to create the best user experience for your product's specific use case.  Keep in mind that when you ship your own Alexa-enabled product, your customers will expect that no matter what else is happening, *every* time they speak to Alexa, she will listen and respond instantly.  
 
