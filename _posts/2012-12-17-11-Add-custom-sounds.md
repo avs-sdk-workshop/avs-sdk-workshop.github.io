@@ -20,7 +20,7 @@ At the top of the file where you see the other #include statements, add `#includ
 
 Your OS image includes a folder at /home/pi/CustomSounds populated with some .wav files to use for this workshop.  You'll need to add a path to one of these sounds to enable your audio cue.  Near the bottom of the file in the `printState()` function, where it says `case DialogUXState::LISTENING:` add the following command:
 
-`system("play /home/pi/CustomSounds/ding.wav")`
+`system("play /home/pi/CustomSounds/ding.wav");`
 
 ![Add_sound](../assets/Play_Ding_2.png)
 

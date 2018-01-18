@@ -20,7 +20,7 @@ After you've registered for an Amazon developer account, you'll need to create a
 
 1. **Product Name**: the display name in the developer portal, as well as the name that will be provided to your users when they register the product with Amazon.  For example, **"Test Speaker"**
 2. **Product ID**: provide a simple identifier for your product. **No spaces.**  For example, **"TestSpeaker"**
-3. Select **Device** for *Is your product an app or a device?*
+3. Select **Alexa-Enabled Device** for *Please select your product type*
 4. Select **No** for *Will your device include a companion app?*
 5. Choose a product category, any category will work, and add a description.
 6. Select **Hands-free** for *How will users interact with your product?*

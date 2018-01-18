@@ -32,4 +32,4 @@ PRODUCT_ID="TEST_SPEAKER"
 {:.verify}
 ### Checkpoint 5
 
-1. Make sure you've saved the **config.sh** file in your */home/pi* folder with your **Device Type ID**, **Device Serial Number**, **Client ID** and **Client Secret**.
+1. Make sure you've saved the **config.sh** file in your */home/pi/avs-sdk* folder with your **Device Type ID**, **Device Serial Number**, **Client ID** and **Client Secret**.
