@@ -22,7 +22,7 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 4. Connect the keyboard and mouse to the USB ports.
 5. Connect your monitor using the HDMI port.
 
-AVST-ClosePiSetup.jpg
+![Pi_setup](../assets/AVST-ClosePiSetup.jpg)
 
 
 
