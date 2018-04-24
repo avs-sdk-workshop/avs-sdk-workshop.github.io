@@ -10,7 +10,7 @@ layout: nil
 
 You are now ready to run the install script. This will install all dependencies, including the **Wake Word Engine** (WWE) from Sensory.  The WWE compares your captured audio to an onboard model of a wake word (in this case "Alexa") and will initiate the connection to send captured audio to the AVS when triggered.
 
-To run the install script, open a **terminal** by clicking on the console window in the Pi's toolbar at the upper left of the screen. There should be two scripts in your */home/pi/avs-sdk* directory: **config.sh** that you just populated, and **setup.sh** which uses the data from your config file to run the install script. Copy and paste the following command into your terminal window, and hit return:
+To run the install script, open a **terminal** by clicking on the console window in the Pi's toolbar at the upper left of the screen. There should be two scripts in your */home/pi/avs-sdk* directory: **config.txt** that you just populated, and **setup.sh** which uses the data from your config file to run the install script. Copy and paste the following command into your terminal window, and hit return:
 
 `cd /home/pi/avs-sdk
 bash setup.sh config.sh
