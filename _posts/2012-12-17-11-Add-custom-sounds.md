@@ -1,5 +1,5 @@
 ---
-title: '11. Add a Customized Sound on State Change'
+title: '11. Add Sounds to Indicate Device State'
 
 
 layout: nil
@@ -10,9 +10,11 @@ layout: nil
 If you're speaking to an Alexa-enabled device, you may want an indicator that your wake word was heard.  In some cases, this may be an LED activating or changing color on the device.  But what if you can't see the device?  In this case, you may want your device to play an audio cue to confirm when Alexa hears you.  In this step, you'll modify the **User Interface Manager** to play a **Ding!** each time Alexa's state changes to **LISTENING**.
 
 
-Navigate to */home/pi/avs-sdk/avs-device-sdk/SampleApp/src/* and open UIManager.cpp with a text editor.
+Navigate to */home/pi/avs-device-sdk/SampleApp/src/* and open UIManager.cpp with a text editor by pasting the following command into your terminal:
 
-![UIM_location](../assets/UI_Manager_Location.png)
+```
+sudo leafpad /home/pi/avs-device-sdk/SampleApp/src/UIManager.cpp
+```
 
 At the top of the file where you see the other #include statements, add `#include <cstdlib>`.  This will enable your play function that you'll add in the next step.
 
@@ -26,13 +28,18 @@ Your OS image includes a folder at /home/pi/CustomSounds populated with some .wa
 
 Save your text file before closing it.
 You'll need to rebuild the Sample App for the changes to take effect.  First, quit out of your existing instance of the Sample App (if it's still running) by typing "**q** and hitting **return**.  Open a terminal and input the following command to rebuild the Sample App:
-`cd /home/pi/avs-sdk/build/SampleApp
-make
+
 `
+cd /home/pi/build/SampleApp
+sudo make
+`
+
 Restart your Sample App by initiating the **startsample.sh** script in a terminal:
-`cd /home/pi/avs-sdk
-bash startsample.sh
-`
+
+```
+cd /home/pi/
+sudo bash startsample.sh
+```
 
 {:.verify}
 ### Checkpoint 11
