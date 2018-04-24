@@ -1,5 +1,5 @@
 ---
-title: '6. Run the Install Script'
+title: '5. Run the Install Script'
 
 
 layout: nil
@@ -23,9 +23,6 @@ If your build was successful, you'll receive a printout of your configuration de
 
 ![build success](/assets/build_successful.png)
 
-For this workshop, portions of the script have been pre-built to get your client up and running faster.  If you use this script for an install on a clean OS image, expect it to take around 20 minutes to build.  You can use the text editor to view the contents of the **setup.sh** file. It's a relatively simple script designed to run on a clean install of the Raspbian **stretch** OS.
 
-{:.verify}
-### Checkpoint 6
 
-1. Build completed without error output.
+
