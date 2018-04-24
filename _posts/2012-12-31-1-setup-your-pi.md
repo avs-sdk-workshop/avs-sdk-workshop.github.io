@@ -21,13 +21,17 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 2. Plug in the USB microphone and 3.5mm earbuds.
 4. Connect the keyboard and mouse to the USB ports.
 5. Connect your monitor using the HDMI port.
-6. Connect the Ethernet Cable.
+
+AVST-ClosePiSetup.jpg
+
+
 
 {:.steps}
 ### Booting Your Pi
 
 1. Plug in the power supply to the micro USB connector on the Pi.  You should see a loading screen go through some startup steps before booting to desktop - if you run into any errors, request a new SD micro card to boot the OS from.
-2. Open a web browser by clicking on the globe icon in the top left toolbar.
+2. Connect to wifi by clicking on the connectivity icon in the top right of the tool bar (next to the speaker icon).
+3. Open a web browser by clicking on the globe icon in the top left toolbar.
 
 {:.verify}
 ### Checkpoint 1
