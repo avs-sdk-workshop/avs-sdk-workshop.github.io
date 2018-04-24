@@ -1,5 +1,5 @@
 ---
-title: '5. Copy Your Credentials'
+title: '4. Input Your Credentials'
 
 
 layout: nil
