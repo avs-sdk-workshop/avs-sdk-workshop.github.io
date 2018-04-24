@@ -1,5 +1,5 @@
 ---
-title: '7. Obtain a refresh token'
+title: '6. Authorize your Device'
 
 
 layout: nil
@@ -15,7 +15,7 @@ sudo bash startsample.sh
 ```
 
 Wait for the sample app to display a message like this:
-
+```
 ######################################################
 #       > > > > > NOT YET AUTHORIZED < < < < <       #
 ######################################################
@@ -23,17 +23,17 @@ Wait for the sample app to display a message like this:
 ############################################################################################
 #     To authorize, browse to: 'https://amazon.com/us/code' and enter the code: {XXXX}     #
 ############################################################################################
-
+```
  Use a browser to navigate to the URL specified in the message from the sample app.
     Authenticate using your Amazon user credentials.
     Enter the code specified in the message from sample app.
     Select “Allow”.
 Wait (it may take as long as 30 seconds) for CBLAuthDelegate to successfully get an access and refresh token from Login With Amazon (LWA). This may take At this point the sample app will print a message like this:
-
+```
 ########################################
 #       Alexa is currently idle!       #
 ########################################
-
+```
 You are now ready to use the sample app. The next time you start the sample app, you will not need to go through the authorization process.
 
 {:.verify}
