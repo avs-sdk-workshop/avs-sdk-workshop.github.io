@@ -24,7 +24,7 @@ Wait for the sample app to display a message like this:
 #     To authorize, browse to: 'https://amazon.com/us/code' and enter the code: {XXXX}     #
 ############################################################################################
 ```
- Use a browser to navigate to the URL specified https://amazon.com/us/code in the message from the sample app.
+ Use a browser to navigate to [https://amazon.com/us/code] 
     Authenticate using your Amazon user credentials.
     Enter the code specified in the message from sample app.
     Select “Allow”.
