@@ -10,7 +10,7 @@ Initialize the sample app by pasting or typing the following command into your t
 
 
 ```
-cd home/pi/
+cd /home/pi/
 sudo bash startsample.sh
 ```
 
