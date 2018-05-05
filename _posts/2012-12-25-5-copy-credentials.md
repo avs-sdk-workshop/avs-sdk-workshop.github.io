@@ -19,7 +19,7 @@ PRODUCT_ID=""
 
 2- In your web browser, Navigate back to the AVS dashboard:  [https://developer.amazon.com/avs/home.html#/avs/home](https://developer.amazon.com/avs/home.html#/avs/home).
 
-3- Click **Manage**. From **Details and management** copy your **Product ID** (no spaces) into the `PRODUCT_ID` field of your **config.sh** file.
+3- Click **Manage**. From **Details and management** copy your **Product ID** (no spaces) into the **PRODUCT_ID** field of your **config.sh** file.
 
 ![product_id](assets/get_product_id.png) 
 
@@ -31,7 +31,7 @@ PRODUCT_ID=""
 
 ![correct_id](assets/get_correct_id.png) 
 
-6- Place the **ClientID** (make sure it's from **Other Devices and Platforms** section) into the `CLIENT_ID` field.  
+6- Place the **ClientID** (make sure it's from **Other Devices and Platforms** section) into the **CLIENT_ID** field.  
 
 7- The **device serial number** is created by device makers and isn't used by AVS - for this workshop, it can be any alpha-numeric value (here it's 123456):
 
