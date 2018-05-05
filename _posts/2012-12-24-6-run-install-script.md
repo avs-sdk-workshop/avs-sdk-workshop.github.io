@@ -17,7 +17,7 @@ cd /home/pi/
 sudo bash setup.sh config.txt
 ```
 
-Type AGREE and return when prompted.
+Type **AGREE** and return when prompted.
 
 If you have made an error in filling out the **config.txt** file with your account-specific information, the script will error out and inform you which field needs to be fixed.  In this event, return to your **security profile** on your Developer page and double-check your copy and paste into **config.txt** was correct.
 
