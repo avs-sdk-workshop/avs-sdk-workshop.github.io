@@ -18,11 +18,12 @@ Wait for the sample app to display a message like this:
 
 ![code](../assets/code_circle.png)
 
- Use a browser to navigate to [amazon.com.us.code](https://amazon.com/us/code) 
-    Authenticate using your Amazon user credentials.
-    Enter the code specified in the message from sample app.
-    Select “Allow”.
-Wait (it may take as long as 30 seconds) for CBLAuthDelegate to successfully get an access and refresh token from Login With Amazon (LWA). This may take At this point the sample app will print a message like this:
+ 1. Use a browser to navigate to [amazon.com.us.code](https://amazon.com/us/code)   
+ 2. Authenticate using your Amazon user credentials.  
+ 3. Enter the code specified in the message from sample app.  
+ 4. Select “Allow”.  
+ 5. Wait (it may take as long as 30 seconds) for CBLAuthDelegate to successfully get an access and refresh token from Login With Amazon (LWA).  
+ At this point the sample app will print a message like this:
 ```
 ########################################
 #       Alexa is currently idle!       #
