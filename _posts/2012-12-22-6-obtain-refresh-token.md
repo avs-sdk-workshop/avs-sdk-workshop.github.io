@@ -15,15 +15,6 @@ sudo bash startsample.sh
 ```
 
 Wait for the sample app to display a message like this:
-```
-######################################################
-#       > > > > > NOT YET AUTHORIZED < < < < <       #
-######################################################
-
-############################################################################################
-#     To authorize, browse to: 'https://amazon.com/us/code' and enter the code: {XXXX}     #
-############################################################################################
-```
 
 ![code](../assets/code_circle.png)
 
