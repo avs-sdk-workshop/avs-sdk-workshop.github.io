@@ -12,4 +12,6 @@ Unless you already have one, go ahead and create a free developer account at [de
 
 {:.verify}
 ### Checkpoint 2
-1. Login and navigate to [https://developer.amazon.com/edw/home.html](https://developer.amazon.com/edw/home.html) by either entering it manually or by clicking on Alexa on the left side of the screen and then 'Your Alex Consoles' in the top right and selecting 'Skills'. 
+1. Once logged in, navigate to [https://developer.amazon.com/edw/home.html](https://developer.amazon.com/edw/home.html) OR click on 'Alexa' on the left side of the screen   
+2. Select 'Your Alex Consoles' in the top right  
+3. Select 'Skills'   
