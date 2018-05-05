@@ -30,5 +30,6 @@ DEVICE_SERIAL_NUMBER="123456"
 CLIENT_ID="amzn1.application-oa2-client.12345678901234567890123456789012"
 PRODUCT_ID="TEST_SPEAKER" (your custom name)
 ```
+![configFile](../assets/config_file1.PNG)
 
 Save the file and close it.
