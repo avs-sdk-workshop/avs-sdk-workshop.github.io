@@ -14,6 +14,6 @@ This will take you to a product menu - on the left side you should see Product D
 
 When you click the **Download** button on your Security Profile in your web browser, you'll see a **config.json** file appear in your home/pi/downloads folder.  In the file manager, copy this file from the /downloads folder and place it in your home/pi folder as shown in the picture below.
 
-{% include image.html file="avs/github/downloadConfig_large" type="png" alt="config" border="true" %}
+![config](../assets/downloadConfig_large.png)
 
 Now that your Raspberry Pi has your own **unique credentials** loaded on it, it's time to build your SDK.
