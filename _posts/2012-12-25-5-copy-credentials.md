@@ -5,43 +5,15 @@ title: '4. Input Your Credentials'
 layout: nil
 ---
 
-1- On your Raspberry Pi, open the File Explorer by clicking on the folder icon on your toolbar at the top left.  It should come up in the */home/pi* folder.  Right-click on **config.txt** and select "Text Editor" to open your configuration file.  
 
-![](assets/config_file.png)
+### Download your credentials
 
-It should contain the following fields:
+If you didn't already save it to your Pi when creating your product profile, it's time to get your **config.json** file onto your client device.  Start by opening a browser and logging into your [AVS dashboard](https://developer.amazon.com/avs/home.html#/avs/home). Click on your Product Name, it should be **AVS Tutorials Project** or whatever you named it when creating the product profile.
 
-```
-DEVICE_SERIAL_NUMBER=""
-CLIENT_ID=""
-PRODUCT_ID=""
-```
+This will take you to a product menu - on the left side you should see Product Details.  Select Security Profile below that and choose **Other devices and platforms** from the *Web - Android/Kindle - iOS - Other devices and platforms* menu.
 
-2- In your web browser, Navigate back to the AVS dashboard:  [https://developer.amazon.com/avs/home.html#/avs/home](https://developer.amazon.com/avs/home.html#/avs/home).
+When you click the **Download** button on your Security Profile in your web browser, you'll see a **config.json** file appear in your home/pi/downloads folder.  In the file manager, copy this file from the /downloads folder and place it in your home/pi folder as shown in the picture below.
 
-3- Click **Manage**. From **Details and management** copy your **Product ID** (no spaces) into the **PRODUCT_ID** field of your **config.sh** file.
+{% include image.html file="avs/github/downloadConfig_large" type="png" alt="config" border="true" %}
 
-![product_id](assets/get_product_id.png) 
-
-4- Select **Security Profile** from the left tab.  
-
-![details1](assets/details1.png) 
-
-5- Navigate to **Other Devices and Platforms** and copy your **Client ID**.
-
-![correct_id](assets/get_correct_id.png) 
-
-6- Place the **ClientID** (make sure it's from **Other Devices and Platforms** section) into the **CLIENT_ID** field.  
-
-7- The **device serial number** is created by device makers and isn't used by AVS - for this workshop, it can be any alpha-numeric value (here it's 123456):
-
-Your completed config.txt fields will look something like this:  
-
-```
-DEVICE_SERIAL_NUMBER="123456"
-CLIENT_ID="amzn1.application-oa2-client.12345678901234567890123456789012"
-PRODUCT_ID="TEST_SPEAKER" (your custom name)
-```
-![config_file](../assets/config_file1.png) 
-
-8- **SAVE** the file and close it.
+Now that your Raspberry Pi has your own **unique credentials** loaded on it, it's time to build your SDK.
