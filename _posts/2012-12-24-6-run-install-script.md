@@ -17,24 +17,22 @@ cd /home/pi/
 sudo bash setup.sh config.json [-s {{1234}}]
 ```
 
-{% include image.html file="avs/github/run-script" type="png" alt="Terminal" border="true" %}
+![run_script](../assets/run-script.png)
 
 Note that the field in double brackets is the **Device Serial Number** which will be unique to each instance of the SDK.  In this case it's pre-populated with 1234.
 
 Type **"AGREE"** when it prompts you to accept the licensing terms from our third-party libraries.  Unless, of course, you disagree!
 
-This will kick off the installation process which could take over 20 minutes.  Note that about 15 minutes into the install, it's going to pause and ask you to accept Sensory Wake Word's terms and conditions (you'll need to hit "return" and then type "yes" to accept).
+This will kick off the installation process which could normally take over 20 minutes, but for our workshops at reInvent we've precompiled the image to save you some time.  Note that it's going to pause and ask you to accept Sensory Wake Word's terms and conditions (you'll need to hit "return" and then type "yes" to accept).
 
-Once you've finished compiling, you should see a success screen similar to the one shown here.  If your device freezes up - don't worry, just restart by unplugging your Pi's power cord.  When you get back to your desktop, re-run the above setup.sh command to finish your install.
+Once you've finished compiling, you should see a success screen.  If your device freezes up - don't worry, just restart by unplugging your Pi's power cord.  When you get back to your desktop, re-run the above setup.sh command to finish your install.
 
-{% include image.html file="avs/github/complete" type="png" alt="Complete" border="true" %}
 
 Now you just need to launch the sample app and get a refresh token from AVS so your device can authenticate with the cloud via Login With Amazon (LWA).  
 
 
 
 
-![build success](/assets/build_successful.png)
 
 
 
