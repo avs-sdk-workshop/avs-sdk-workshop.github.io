@@ -8,8 +8,6 @@ layout: nil
 {:.steps}
 ### Register Your Product and Create a Security Profile
 
-Follow the instructions [here](https://github.com/alexa/avs-device-sdk/wiki/Create-Security-Profile) to create your product profile.
-
 In this tutorial, we'll walk you through creating an Amazon developer account, registering your prototype or commercial device, and setting up your security profile. When finished, you'll have the credentials required to access the Alexa Voice Service (AVS).
 
 ### Create an Amazon developer account
@@ -22,15 +20,13 @@ After you've created an Amazon developer account, you'll need to create a produc
 
 Log in to [developer.amazon.com](https://developer.amazon.com/login.html).  You should be in the Dashboard by default - click the **ALEXA VOICE SERVICE** button in the global navigation to start building products with Alexa built-in.
 
-{% include image.html file="avs/github/1-devportal-alexa-fixed" type="png" alt="Dashboard" border="true" %}
+![code](../assets/1-devportal-alexa-fixed.png)
 
 If this is your first time using AVS, you'll see a welcome screen. Click the **GET STARTED** button, then click the **CREATE PRODUCT** button.
 
 If you're a returning developer, click the blue **CREATE PRODUCT** button at the top right corner of the screen.
 
 ### Fill in product information
-
-{% include note.html content="These instructions are for developers prototyping on Raspberry Pi.  If you are registering a commercial product profile, you will want to use your own custom information here." %}
 
 1. *Product Name*: Use **AVS Tutorials Project**.
 2. *Product ID*: Use **PrototypePi.** No spaces are allowed for the *Product ID* field.
@@ -57,7 +53,7 @@ If you're a returning developer, click the blue **CREATE PRODUCT** button at the
 
 3. Select **Other devices and platforms** from the *Web - Android/Kindle - iOS - Other devices and platforms* options in the **Platform Information** section.
 
-{% include image.html file="avs/github/1-otherdevicesplatforms-fixed" type="png" alt="CBLgen" border="true" %}
+![platforms](../assets/1-otherdevicesplatforms-fixed.png)
 
    - Write a name for your Client ID here - you can just use **Prototype**.
    - Click "Generate ID".  You should get a Client ID and an option to download it.
