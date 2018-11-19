@@ -18,7 +18,7 @@ Wait for the sample app to display a message like this:
 
 ![code](../assets/code_circle.png)
 
- 1. Use a browser to navigate to [amazon.com.us.code](https://amazon.com/us/code)   
+ 1. Use a browser to navigate to [amazon.com/us/code](https://amazon.com/us/code)   
  2. Authenticate using your Amazon user credentials.  
  3. Enter the code specified in the message from sample app.  
  4. Select “Allow”.  
@@ -43,7 +43,6 @@ Say "Alexa" into the microphone on your Raspberry Pi to trigger the **Wake Word 
 As you interact with your prototype, you should see a series of status changes annotated by your level of DEBUG set (DEBUG9 in this picture).  
 If you cannot hear Alexa's response, ensure your speaker/earbuds are turned on and plugged in to your Raspberry Pi's 3.5mm audio jack.  Check that your audio output on your Pi is set to **Analog** by right-clicking on the speaker icon in the top right corner of the screen.
 
-![analog](../assets/select_analog.png)
 
 If Alexa isn't responding or your Sample App appears stuck at a certain step (displaying error messages when you try to speak), just type "**s**" and hit return to stop that interaction.  You can also type "**q**" and hit return to exit from the Sample App.
 
