@@ -1,4 +1,4 @@
-n---
+---
 exclude: ['README.markdown']
 permalink: ':title'
 highlighter: 'pygments'
