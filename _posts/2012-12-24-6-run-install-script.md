@@ -8,20 +8,31 @@ layout: nil
 
 ### Run the Install Script
 
-You are now ready to run the install script. This will install all dependencies, including the **Wake Word Engine** (WWE) from Sensory.  The WWE compares your captured audio to an onboard model of a wake word (in this case "Alexa") and will initiate the connection to send captured audio to the AVS when triggered.
+You are now ready to run the install script. This will install all dependencies, including the **Wake Word Engine** (WWE) from Sensory.  The WWE compares incoming audio to an onboard model of a wake word (**"Alexa"**) and will initiate the transmission of audio to the cloud when triggered.  Note that this WWE is provided for **prototyping purposes only** and would need to be licensed for a commercial device.  The AVS Device SDK is modular and flexible. When you're ready to build your product, you can choose any WWE you prefer. Remember that for AVS products, the wake word must be **Alexa** so that your customers aren't confused about how to interact with your device.
 
-To run the install script, open a **terminal** by clicking on the console window in the Pi's toolbar at the upper left of the screen. There should be two scripts in your */home/pi/* directory: **config.txt** that you just populated, and **setup.sh** which uses the data from your config file to run the install script. Copy and paste the following command into your terminal window, and hit return:
+To run the install script, open a **terminal** by clicking on the console window in the Pi's toolbar in the upper-left corner of the screen (or just use your existing terminal window). You should see a **setup.sh** script in your */home/pi/* directory. This pulls the credentials from your **config.json** file to run the install script. To launch the setup script, copy and paste the following command into your terminal window and hit return:
 
 ```
 cd /home/pi/
-sudo bash setup.sh config.txt
+sudo bash setup.sh config.json [-s {{1234}}]
 ```
 
-Type **AGREE** and return when prompted.
+{% include image.html file="avs/github/run-script" type="png" alt="Terminal" border="true" %}
 
-If you have made an error in filling out the **config.txt** file with your account-specific information, the script will error out and inform you which field needs to be fixed.  In this event, return to your **security profile** on your Developer page and double-check your copy and paste into **config.txt** was correct.
+Note that the field in double brackets is the **Device Serial Number** which will be unique to each instance of the SDK.  In this case it's pre-populated with 1234.
 
-If your build was successful, you'll receive a printout of your configuration details (such as Client ID) plus a message informing you that Configuration/Build was successful.
+Type **"AGREE"** when it prompts you to accept the licensing terms from our third-party libraries.  Unless, of course, you disagree!
+
+This will kick off the installation process which could take over 20 minutes.  Note that about 15 minutes into the install, it's going to pause and ask you to accept Sensory Wake Word's terms and conditions (you'll need to hit "return" and then type "yes" to accept).
+
+Once you've finished compiling, you should see a success screen similar to the one shown here.  If your device freezes up - don't worry, just restart by unplugging your Pi's power cord.  When you get back to your desktop, re-run the above setup.sh command to finish your install.
+
+{% include image.html file="avs/github/complete" type="png" alt="Complete" border="true" %}
+
+Now you just need to launch the sample app and get a refresh token from AVS so your device can authenticate with the cloud via Login With Amazon (LWA).  
+
+
+
 
 ![build success](/assets/build_successful.png)
 
