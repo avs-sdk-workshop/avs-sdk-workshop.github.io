@@ -8,19 +8,20 @@ layout: nil
 {:.steps}
 ### Interact with Your Prototype
 
-You can now talk to your Pi by simply saying the wake word "Alexa". Try the following, and watch the output in the terminal window to see the directives and events that flow for each -
+Say "Alexa" into the microphone on your Raspberry Pi to trigger the **Wake Word Engine**.  Since you are using a single microphone in a noisy environment, you may want to speak closely into your microphone to ensure your voice is heard clearly.  You should see a blue light on the bottom of your screen, indicating the wake word was recognized.  Then say "tell me a joke." If Alexa responds, congratulations!  You have a working prototype.  
 
-* Say "Alexa", then ask "What time is it?"  
-* Say "Alexa", then ask "What's the weather in Las Vegas?"  
-* Say "Alexa", then say "Set a timer for 5 seconds."
-* Say "Alexa", then say "Play NPR news on TuneIn."
-* Say "Alexa", then say "Good afternoon."
-* Say "Alexa", then say "Tell me a joke."
-* Say "Alexa", then ask "What's the meaning of life?"
-* Say "Alexa", then say "Sing happy birthday."
-* Say "Alexa", then ask "What day of the week does Christmas fall on?"
-* Say "Alexa", then ask "Where were you born?"
-* Say "Alexa", then ask "Can you rap?"
+If you cannot hear Alexa's response, ensure your speaker/earbuds are turned on and plugged in to your Raspberry Pi's 3.5mm audio jack.  Check that your audio output on your Pi is set to **Analog** by right-clicking on the speaker icon in the top right corner of the screen.
+
+Try the following interactions, and note how the screen allows for Alexa to provide information-rich interactions -
+  
+
+* Say "Alexa", then ask "What's the weather in Las Vegas?"  Note how instead of just hearing today's weather over the speaker, you also get a 5 day forecast visually as a bonus!
+
+* Say "Alexa", then say "Play Katy Perry on TuneIn."  You get album art and transport controls (try clicking "next"!)
+
+* Say "Alexa", then say "Add Milk, Eggs, Bread and Orange Juice to my shopping list."  You get a visual confirmation of how your list is shaping up, and if you fill up your list you can browse by using the scroll wheel (or if you had a touchscreen, a swipe)
+
+* Say "Alexa", then say "Who is Angela Merkel?"  Wikipedia provides a nice picture for your screen and some extra stats.  A picture is worth a thousand words!
 
 ### Try a Multi-Turn interaction
 
