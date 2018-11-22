@@ -5,7 +5,6 @@ title: '3. Create a Device & Security Profile'
 layout: nil
 ---
 
-{:.steps}
 ### Register Your Product and Create a Security Profile
 
 In this tutorial, we'll walk you through creating an Amazon developer account, registering your prototype or commercial device, and setting up your security profile. When finished, you'll have the credentials required to access the Alexa Voice Service (AVS).
