@@ -56,7 +56,6 @@ If you're a returning developer, click the blue **CREATE PRODUCT** button at the
 
    - Write a name for your Client ID here - you can just use **Prototype**.
    - Click "Generate ID".  You should get a Client ID and an option to download it.
-   {% include image.html file="avs/github/1-otherdevicesplatforms2" type="png" alt="Profile" border="true" %}
    - If you're creating this product profile on your Raspberry Pi, click **Download** to get your credentials onto your AVS prototype.  Save the config.json file to your `/home/pi` directory.  If you are creating this profile from a different PC, that's OK - you can leave the file to be downloaded later.
    - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements.*
 	 - Click **FINISH**.
