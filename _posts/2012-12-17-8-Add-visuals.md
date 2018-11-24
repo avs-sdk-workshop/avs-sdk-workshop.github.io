@@ -11,7 +11,7 @@ When you ship your screen-based product with Alexa built-in, you'll probably wan
 
 In your File Manager, navigate to `/home/pi/Smart-screen-sdk-test/sdk_changes/GUI/js/src/lib/data`.  Right click on the **Home.json** file and select open with Text Editor to modify the file as shown in the below picture. 
 
-![config](../assets/downloadConfig_large.png)
+![config](../assets/homejson.png)
 
 Here, you can input any URL to replace your home screen with.  Make your own, or try the following:
 
