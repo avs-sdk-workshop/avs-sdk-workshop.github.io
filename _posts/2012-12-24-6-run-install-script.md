@@ -12,10 +12,12 @@ You are now ready to run the install script. This will install all dependencies,
 
 To run the install script, open a **terminal** by clicking on the console window in the Pi's toolbar in the upper-left corner of the screen (or just use your existing terminal window). You should see a **setup.sh** script in your */home/pi/* directory. This pulls the credentials from your **config.json** file to run the install script. To launch the setup script, copy and paste the following command into your terminal window and hit return:
 
+
 ```
 cd /home/pi/
 sudo bash setup.sh config.json -m /home/pi/Smart-screen-sdk-test/
 ```
+
 
 ![run_script](../assets/configTerm.png)
 
