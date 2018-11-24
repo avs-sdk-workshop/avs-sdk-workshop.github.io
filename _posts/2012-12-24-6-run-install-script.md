@@ -14,16 +14,15 @@ To run the install script, open a **terminal** by clicking on the console window
 
 ```
 cd /home/pi/
-sudo bash setup.sh config.json [-s {{1234}}]
+sudo bash setup.sh config.json -m /home/pi/Smart-screen-sdk-test/
 ```
 
-![run_script](../assets/run-script.png)
+![run_script](../assets/configTerm.png)
 
-Note that the field in double brackets is the **Device Serial Number** which will be unique to each instance of the SDK.  In this case it's pre-populated with 1234.
 
 Type **"AGREE"** when it prompts you to accept the licensing terms from our third-party libraries.  Unless, of course, you disagree!
 
-This will kick off the installation process which could normally take over 20 minutes, but for our workshops at reInvent we've precompiled the image to save you some time.  Note that it's going to pause and ask you to accept Sensory Wake Word's terms and conditions (you'll need to hit "return" and then type "yes" to accept).
+This will kick off the installation process which could normally take over 20 minutes, but for reInvent we've precompiled the image to save you some time.  
 
 Once you've finished compiling, you should see a success screen.  If your device freezes up - don't worry, just restart by unplugging your Pi's power cord.  When you get back to your desktop, re-run the above setup.sh command to finish your install.
 
