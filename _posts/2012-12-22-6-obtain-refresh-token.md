@@ -33,10 +33,12 @@ Wait for the sample app to display a message like this:
 
 You are now ready to use the sample app. The next time you start the sample app, you will not need to go through the authorization process.
 
-7. Now, you'll need to open a browser to add visual elements to your prototype.  Open a new chromium tab to the following URL: 
+Now, you'll need to open a browser to add visual elements to your prototype.  Open a new chromium tab to the following URL: 
 file:///home/pi/avs-device-sdk/GUI/js/dist/index.html?insecure=1  
 
-8. If you see the following welcome screen - congradulations!  It's time to talk with Alexa.
+Note, this should autocomplete in your browser when you start typing - it's also in the bookmarks as "Alexa Home Screen".
+
+Congrats on your progress so far!  Now it's time to talk with Alexa.
 
 
 
