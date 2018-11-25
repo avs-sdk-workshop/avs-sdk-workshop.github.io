@@ -5,25 +5,17 @@ title: '3. Create a Device & Security Profile'
 layout: nil
 ---
 
-### Register Your Product and Create a Security Profile
-
-In this tutorial, we'll walk you through creating an Amazon developer account, registering your prototype or commercial device, and setting up your security profile. When finished, you'll have the credentials required to access the Alexa Voice Service (AVS).
-
-### Create an Amazon developer account
-
-Unless you already have one, go ahead and create a free developer account at [developer.amazon.com](https://developer.amazon.com/login.html).
-
 ### Register your prototype and create a security profile
 
 After you've created an Amazon developer account, you'll need to create a product and security profile. This will enable your software client to connect to AVS.
 
-Log in to [developer.amazon.com](https://developer.amazon.com/login.html).  You should be in the Dashboard by default - click the **ALEXA VOICE SERVICE** button in the global navigation to start building products with Alexa built-in.
+Log in to [developer.amazon.com](https://developer.amazon.com/login.html).  You should be in the Dashboard by default - click the **ALEXA VOICE SERVICE** button in the global navigation to start building products with Alexa built-in.  If you don't see this screen, try this link:  https://developer.amazon.com/avs/home.html#/avs/homes
 
 ![code](../assets/1-devportal-alexa-fixed.png)
 
 If this is your first time using AVS, you'll see a welcome screen. Click the **GET STARTED** button, then click the **CREATE PRODUCT** button.
 
-If you're a returning developer, click the blue **CREATE PRODUCT** button at the top right corner of the screen.
+If you're a returning developer that has already created products in your dashboard, click the blue **CREATE PRODUCT** button at the top right corner of the screen to start building a new device profile.
 
 ### Fill in product information
 
@@ -56,7 +48,7 @@ If you're a returning developer, click the blue **CREATE PRODUCT** button at the
 
    - Write a name for your Client ID here - you can just use **Prototype**.
    - Click "Generate ID".  You should get a Client ID and an option to download it.
-   - If you're creating this product profile on your Raspberry Pi, click **Download** to get your credentials onto your AVS prototype.  Save the config.json file to your `/home/pi` directory.  If you are creating this profile from a different PC, that's OK - you can leave the file to be downloaded later.
+   - If you're creating this product profile on your Raspberry Pi, click **Download** to get your credentials onto your AVS prototype.  Save the config.json file to your `/home/pi` directory.  When you click download, it'll automatically put it in your /home/pi/downloads folder.
    - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements.*
 	 - Click **FINISH**.
 
