@@ -13,10 +13,10 @@ In your File Manager, navigate to `/home/pi/Smart-screen-sdk-test/sdk_changes/GU
 
 ![config](../assets/homejson.png)
 
-Here, you can input any URL to replace your home screen with.  Make your own, or try the following:
+Here, you can input any URL to replace your home screen with.  Make your own, or try the following as an example:
 
 ```
-FLETCH INPUT UPDATED PIC LINK HERE
+https://i.imgur.com/orvck3S.png
 ```
 
 Save and close the file.  If you aren't able to save, it may be an ownership issue, you can type the following into the terminal to fix it:
