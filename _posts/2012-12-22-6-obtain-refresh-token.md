@@ -23,17 +23,11 @@ Wait for the sample app to display a message like this:  If you don't see this, 
  3. Enter the code specified in the message from sample app.  
  4. Select “Allow”.  
  5. Wait (it may take as long as 30 seconds) for CBLAuthDelegate to successfully get an access and refresh token from Login With Amazon (LWA).  
- 6. At this point the sample app will print a message like this:
-```
-########################################
-#       Alexa is currently idle!       #
-########################################
-```
-![code](../assets/idle_alexa.png)
+ 6. At this point the sample app will print a message informing you that you are now authorized!  
 
-You are now ready to use the sample app. The next time you start the sample app, you will not need to go through the authorization process.
+Your raspberry pi is now ready to use the sample app. The next time you start the sample app, you will not need to go through the authorization process.
 
-Now, you'll need to open a browser to add visual elements to your prototype.  Open a new chromium tab to the following URL: 
+Now, you'll need to open a browser to add a visual interface to your prototype.  Open a new chromium tab to the following URL: 
 `file:///home/pi/avs-device-sdk/GUI/js/dist/index.html?insecure=1`  
 
 Note, this should autocomplete in your browser when you start typing - it's also in the bookmarks as "Alexa Home Screen".
