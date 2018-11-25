@@ -14,7 +14,7 @@ cd /home/pi/
 sudo bash startsample.sh
 ```
 
-Wait for the sample app to display a message like this:  If you don't see this, but you see "waiting for authorization" messages going by, then scroll up!  It's easy to miss the authorization code since the terminal window fills up pretty fast.  Note - you need to leave this process running while you authorize, don't close the window or otherwise stop the startsample script!
+Wait for the sample app to display a message like the one in the picture below (but, a different code of course) -  If you don't see this, but you see "waiting for authorization" messages going by, then scroll up!  It's easy to miss the authorization code since the terminal window fills up pretty fast.  Note - you need to leave this process running while you authorize, don't close the window or otherwise stop the startsample script.
 
 ![code](../assets/code_circle.png)
 
