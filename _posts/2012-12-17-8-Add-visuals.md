@@ -9,7 +9,7 @@ layout: nil
 
 When you ship your screen-based product with Alexa built-in, you'll probably want your own home screen to display when the device isn't in use.  For example, if you were building Alexa into your smart thermostat, you could display a control screen that showed your own data when the customer wasn't asking Alexa a question.  The Alexa for Smart Screen and TV SDK makes it easy to customize your device behavior.
 
-In your File Manager, navigate to `/home/pi/Smart-screen-sdk-test/sdk_changes/GUI/js/src/lib/data`.  Right click on the **Home.json** file and select open with Text Editor to modify the file as shown in the below picture. 
+In your File Manager, navigate to `/home/pi/Smart-screen-sdk-test/sdk_changes/GUI/js/src/lib/data`  Right click on the **Home.json** file and select open with Text Editor to modify the file as shown in the below picture. 
 
 ![config](../assets/homejson.png)
 
