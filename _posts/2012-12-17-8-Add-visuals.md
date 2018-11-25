@@ -19,6 +19,11 @@ Here, you can input any URL to replace your home screen with.  Make your own, or
 FLETCH INPUT UPDATED PIC LINK HERE
 ```
 
+Save and close the file.  If you aren't able to save, it may be an ownership issue, you can type the following into the terminal to fix it:
+```
+sudo chown -R pi:pi /home/pi
+```
+
 When you're ready, you don't need to re-compile or restart the sample app, just refresh your browser in Chromium.  You should see your own custom home screen image when you aren't interacting with Alexa!
 
 Feel free to poke around in the Home.json file and see what other changes you can make to improve the customer experience on your device.
