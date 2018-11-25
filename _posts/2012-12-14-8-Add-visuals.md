@@ -1,5 +1,5 @@
 ---
-title: '8. Change your Home Screen'
+title: '9. Change your Home Screen'
 
 
 layout: nil
