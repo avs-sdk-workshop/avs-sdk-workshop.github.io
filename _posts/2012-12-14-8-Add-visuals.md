@@ -24,6 +24,12 @@ Save and close the file.  If you aren't able to save, it may be an ownership iss
 sudo chown -R pi:pi /home/pi
 ```
 
-When you're ready, you don't need to re-compile or restart the sample app, just refresh your browser in Chromium.  You should see your own custom home screen image when you aren't interacting with Alexa!
+You will need to rebuild the GUI/js
+```
+cd /home/pi/avs-device-sdk/GUI/js/src/
+npm run-script build
+```
+
+When you're ready, you don't need to re-compile the SDK or restart the sample app, just refresh your browser in Chromium after the build.  You should see your own custom home screen image when you aren't interacting with Alexa!
 
 Feel free to poke around in the Home.json file and see what other changes you can make to improve the customer experience on your device.
