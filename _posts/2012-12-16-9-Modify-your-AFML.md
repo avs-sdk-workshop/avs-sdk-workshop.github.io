@@ -20,6 +20,7 @@ sudo chown -R pi:pi /home/pi
 
 You will need to rebuild the GUI/js
 ```
+cd /home/pi/avs-device-sdk/GUI/js/src/
 npm run-script build
 ```
 
