@@ -7,7 +7,7 @@ layout: nil
 
 Depending on the size of your screen or how your device is used, you might want to make changes in your screen's display behavior.  Navigate to the following folder in your File Manager: `/home/pi/Smart-screen-sdk-test/sdk_changes/GUI/js/src/components` 
 
-Right click on the file and open it with a text editor.
+Right click on the file **apmlRenderer.tsx** and open it with a text editor.
 
 ![code](../assets/renderChange.png)
 
